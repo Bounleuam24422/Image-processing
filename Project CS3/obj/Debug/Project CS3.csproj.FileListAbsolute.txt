@@ -49,3 +49,11 @@ C:\Users\GIGABYTE\source\repos\Image Processing\Image-processing\Project CS3\obj
 C:\Users\GIGABYTE\source\repos\Image Processing\Image-processing\Project CS3\obj\Debug\Project CS3.csproj.CopyComplete
 C:\Users\GIGABYTE\source\repos\Image Processing\Image-processing\Project CS3\obj\Debug\Project CS3.exe
 C:\Users\GIGABYTE\source\repos\Image Processing\Image-processing\Project CS3\obj\Debug\Project CS3.pdb
+C:\Users\GIGABYTE\source\repos\Image Processing\Image-processing\Project CS3\obj\Debug\Project_CS3.Web_cam.resources
+C:\Users\GIGABYTE\source\repos\Image Processing\Image-processing\Project CS3\obj\Debug\Project_CS3.Filters.resources
+C:\Users\GIGABYTE\source\repos\Image Processing\Image-processing\Project CS3\bin\Debug\AForge.dll
+C:\Users\GIGABYTE\source\repos\Image Processing\Image-processing\Project CS3\bin\Debug\AForge.Imaging.dll
+C:\Users\GIGABYTE\source\repos\Image Processing\Image-processing\Project CS3\bin\Debug\AForge.Math.dll
+C:\Users\GIGABYTE\source\repos\Image Processing\Image-processing\Project CS3\bin\Debug\AForge.xml
+C:\Users\GIGABYTE\source\repos\Image Processing\Image-processing\Project CS3\bin\Debug\AForge.Imaging.xml
+C:\Users\GIGABYTE\source\repos\Image Processing\Image-processing\Project CS3\bin\Debug\AForge.Math.xml

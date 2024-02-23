@@ -122,7 +122,7 @@
 			// 
 			// imgCapture
 			// 
-			this.imgCapture.Location = new System.Drawing.Point(52, 62);
+			this.imgCapture.Location = new System.Drawing.Point(389, 71);
 			this.imgCapture.Name = "imgCapture";
 			this.imgCapture.Size = new System.Drawing.Size(327, 329);
 			this.imgCapture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -143,7 +143,7 @@
 			// 
 			// imgBoxVDO
 			// 
-			this.imgBoxVDO.Location = new System.Drawing.Point(427, 62);
+			this.imgBoxVDO.Location = new System.Drawing.Point(23, 71);
 			this.imgBoxVDO.Name = "imgBoxVDO";
 			this.imgBoxVDO.Size = new System.Drawing.Size(327, 329);
 			this.imgBoxVDO.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
