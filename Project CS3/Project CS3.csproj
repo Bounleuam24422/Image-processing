@@ -58,6 +58,12 @@
     <Compile Include="Binary.Designer.cs">
       <DependentUpon>Binary.cs</DependentUpon>
     </Compile>
+    <Compile Include="Contour.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Contour.Designer.cs">
+      <DependentUpon>Contour.cs</DependentUpon>
+    </Compile>
     <Compile Include="Edge Detection.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -84,8 +90,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Web cam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Web cam.Designer.cs">
+      <DependentUpon>Web cam.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Binary.resx">
       <DependentUpon>Binary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contour.resx">
+      <DependentUpon>Contour.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Edge Detection.resx">
       <DependentUpon>Edge Detection.cs</DependentUpon>
@@ -109,6 +124,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Web cam.resx">
+      <DependentUpon>Web cam.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
