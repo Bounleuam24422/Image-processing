@@ -1,0 +1,22 @@
+C:\Users\GIGABYTE\source\repos\Image Processing\Project CS3\bin\Debug\concrt140.dll
+C:\Users\GIGABYTE\source\repos\Image Processing\Project CS3\bin\Debug\cvextern.dll
+C:\Users\GIGABYTE\source\repos\Image Processing\Project CS3\bin\Debug\msvcp140.dll
+C:\Users\GIGABYTE\source\repos\Image Processing\Project CS3\bin\Debug\opencv_ffmpeg320_64.dll
+C:\Users\GIGABYTE\source\repos\Image Processing\Project CS3\bin\Debug\vcruntime140.dll
+C:\Users\GIGABYTE\source\repos\Image Processing\Project CS3\bin\Debug\Project CS3.exe.config
+C:\Users\GIGABYTE\source\repos\Image Processing\Project CS3\bin\Debug\Project CS3.exe
+C:\Users\GIGABYTE\source\repos\Image Processing\Project CS3\bin\Debug\Project CS3.pdb
+C:\Users\GIGABYTE\source\repos\Image Processing\Project CS3\bin\Debug\Emgu.CV.UI.dll
+C:\Users\GIGABYTE\source\repos\Image Processing\Project CS3\bin\Debug\Emgu.CV.World.dll
+C:\Users\GIGABYTE\source\repos\Image Processing\Project CS3\bin\Debug\ZedGraph.dll
+C:\Users\GIGABYTE\source\repos\Image Processing\Project CS3\bin\Debug\Emgu.CV.UI.xml
+C:\Users\GIGABYTE\source\repos\Image Processing\Project CS3\bin\Debug\Emgu.CV.World.xml
+C:\Users\GIGABYTE\source\repos\Image Processing\Project CS3\obj\Debug\Project CS3.csproj.AssemblyReference.cache
+C:\Users\GIGABYTE\source\repos\Image Processing\Project CS3\obj\Debug\Project CS3.csproj.SuggestedBindingRedirects.cache
+C:\Users\GIGABYTE\source\repos\Image Processing\Project CS3\obj\Debug\Project_CS3.Properties.Resources.resources
+C:\Users\GIGABYTE\source\repos\Image Processing\Project CS3\obj\Debug\Project CS3.csproj.GenerateResource.cache
+C:\Users\GIGABYTE\source\repos\Image Processing\Project CS3\obj\Debug\Project CS3.csproj.CoreCompileInputs.cache
+C:\Users\GIGABYTE\source\repos\Image Processing\Project CS3\obj\Debug\Project CS3.csproj.CopyComplete
+C:\Users\GIGABYTE\source\repos\Image Processing\Project CS3\obj\Debug\Project CS3.exe
+C:\Users\GIGABYTE\source\repos\Image Processing\Project CS3\obj\Debug\Project CS3.pdb
+C:\Users\GIGABYTE\source\repos\Image Processing\Project CS3\obj\Debug\Project_CS3.Main.resources
