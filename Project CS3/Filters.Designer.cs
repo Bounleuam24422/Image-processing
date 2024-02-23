@@ -68,7 +68,7 @@
 			this.button1.BackColor = System.Drawing.Color.Gold;
 			this.button1.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
 			this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.button1.Location = new System.Drawing.Point(612, 811);
+			this.button1.Location = new System.Drawing.Point(570, 790);
 			this.button1.Margin = new System.Windows.Forms.Padding(4);
 			this.button1.Name = "button1";
 			this.button1.Size = new System.Drawing.Size(167, 60);
@@ -82,7 +82,7 @@
 			this.label4.AutoSize = true;
 			this.label4.Font = new System.Drawing.Font("Poor Richard", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.label4.ForeColor = System.Drawing.Color.Coral;
-			this.label4.Location = new System.Drawing.Point(1087, 28);
+			this.label4.Location = new System.Drawing.Point(1084, 7);
 			this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
 			this.label4.Name = "label4";
 			this.label4.Size = new System.Drawing.Size(84, 35);
@@ -92,7 +92,7 @@
 			// button13
 			// 
 			this.button13.BackColor = System.Drawing.Color.Gold;
-			this.button13.Location = new System.Drawing.Point(1047, 66);
+			this.button13.Location = new System.Drawing.Point(1044, 45);
 			this.button13.Margin = new System.Windows.Forms.Padding(4);
 			this.button13.Name = "button13";
 			this.button13.Size = new System.Drawing.Size(167, 60);
@@ -104,7 +104,7 @@
 			// button16
 			// 
 			this.button16.BackColor = System.Drawing.Color.Gold;
-			this.button16.Location = new System.Drawing.Point(1047, 812);
+			this.button16.Location = new System.Drawing.Point(1044, 791);
 			this.button16.Margin = new System.Windows.Forms.Padding(4);
 			this.button16.Name = "button16";
 			this.button16.Size = new System.Drawing.Size(167, 60);
@@ -116,7 +116,7 @@
 			// button15
 			// 
 			this.button15.BackColor = System.Drawing.Color.Gold;
-			this.button15.Location = new System.Drawing.Point(1047, 606);
+			this.button15.Location = new System.Drawing.Point(1044, 585);
 			this.button15.Margin = new System.Windows.Forms.Padding(4);
 			this.button15.Name = "button15";
 			this.button15.Size = new System.Drawing.Size(167, 60);
@@ -128,7 +128,7 @@
 			// button14
 			// 
 			this.button14.BackColor = System.Drawing.Color.Gold;
-			this.button14.Location = new System.Drawing.Point(1045, 744);
+			this.button14.Location = new System.Drawing.Point(1042, 723);
 			this.button14.Margin = new System.Windows.Forms.Padding(4);
 			this.button14.Name = "button14";
 			this.button14.Size = new System.Drawing.Size(167, 60);
@@ -140,7 +140,7 @@
 			// button12
 			// 
 			this.button12.BackColor = System.Drawing.Color.Gold;
-			this.button12.Location = new System.Drawing.Point(1045, 675);
+			this.button12.Location = new System.Drawing.Point(1042, 654);
 			this.button12.Margin = new System.Windows.Forms.Padding(4);
 			this.button12.Name = "button12";
 			this.button12.Size = new System.Drawing.Size(167, 60);
@@ -151,7 +151,7 @@
 			// 
 			// button11
 			// 
-			this.button11.Location = new System.Drawing.Point(88, 812);
+			this.button11.Location = new System.Drawing.Point(46, 791);
 			this.button11.Margin = new System.Windows.Forms.Padding(4);
 			this.button11.Name = "button11";
 			this.button11.Size = new System.Drawing.Size(167, 60);
@@ -163,7 +163,7 @@
 			// btnCrop
 			// 
 			this.btnCrop.BackColor = System.Drawing.Color.Gold;
-			this.btnCrop.Location = new System.Drawing.Point(872, 812);
+			this.btnCrop.Location = new System.Drawing.Point(830, 791);
 			this.btnCrop.Margin = new System.Windows.Forms.Padding(4);
 			this.btnCrop.Name = "btnCrop";
 			this.btnCrop.Size = new System.Drawing.Size(167, 60);
@@ -175,7 +175,7 @@
 			// button10
 			// 
 			this.button10.BackColor = System.Drawing.Color.Gold;
-			this.button10.Location = new System.Drawing.Point(1047, 540);
+			this.button10.Location = new System.Drawing.Point(1044, 519);
 			this.button10.Margin = new System.Windows.Forms.Padding(4);
 			this.button10.Name = "button10";
 			this.button10.Size = new System.Drawing.Size(167, 60);
@@ -187,7 +187,7 @@
 			// button9
 			// 
 			this.button9.BackColor = System.Drawing.Color.Gold;
-			this.button9.Location = new System.Drawing.Point(1047, 472);
+			this.button9.Location = new System.Drawing.Point(1044, 451);
 			this.button9.Margin = new System.Windows.Forms.Padding(4);
 			this.button9.Name = "button9";
 			this.button9.Size = new System.Drawing.Size(167, 60);
@@ -199,7 +199,7 @@
 			// label3
 			// 
 			this.label3.AutoSize = true;
-			this.label3.Location = new System.Drawing.Point(12, 729);
+			this.label3.Location = new System.Drawing.Point(94, 713);
 			this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
 			this.label3.Name = "label3";
 			this.label3.Size = new System.Drawing.Size(67, 16);
@@ -210,7 +210,7 @@
 			// label2
 			// 
 			this.label2.AutoSize = true;
-			this.label2.Location = new System.Drawing.Point(24, 684);
+			this.label2.Location = new System.Drawing.Point(106, 668);
 			this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
 			this.label2.Name = "label2";
 			this.label2.Size = new System.Drawing.Size(56, 16);
@@ -221,7 +221,7 @@
 			// button7
 			// 
 			this.button7.BackColor = System.Drawing.Color.Gold;
-			this.button7.Location = new System.Drawing.Point(1045, 337);
+			this.button7.Location = new System.Drawing.Point(1042, 316);
 			this.button7.Margin = new System.Windows.Forms.Padding(4);
 			this.button7.Name = "button7";
 			this.button7.Size = new System.Drawing.Size(167, 60);
@@ -233,7 +233,7 @@
 			// button5
 			// 
 			this.button5.BackColor = System.Drawing.Color.Gold;
-			this.button5.Location = new System.Drawing.Point(1047, 201);
+			this.button5.Location = new System.Drawing.Point(1044, 180);
 			this.button5.Margin = new System.Windows.Forms.Padding(4);
 			this.button5.Name = "button5";
 			this.button5.Size = new System.Drawing.Size(167, 60);
@@ -244,7 +244,7 @@
 			// 
 			// trackBar3
 			// 
-			this.trackBar3.Location = new System.Drawing.Point(81, 729);
+			this.trackBar3.Location = new System.Drawing.Point(163, 713);
 			this.trackBar3.Margin = new System.Windows.Forms.Padding(4);
 			this.trackBar3.Minimum = -10;
 			this.trackBar3.Name = "trackBar3";
@@ -255,7 +255,7 @@
 			// 
 			// trackBar2
 			// 
-			this.trackBar2.Location = new System.Drawing.Point(81, 684);
+			this.trackBar2.Location = new System.Drawing.Point(163, 668);
 			this.trackBar2.Margin = new System.Windows.Forms.Padding(4);
 			this.trackBar2.Minimum = -10;
 			this.trackBar2.Name = "trackBar2";
@@ -271,7 +271,7 @@
 			// button8
 			// 
 			this.button8.BackColor = System.Drawing.Color.Gold;
-			this.button8.Location = new System.Drawing.Point(1047, 404);
+			this.button8.Location = new System.Drawing.Point(1044, 383);
 			this.button8.Margin = new System.Windows.Forms.Padding(4);
 			this.button8.Name = "button8";
 			this.button8.Size = new System.Drawing.Size(167, 60);
@@ -283,7 +283,7 @@
 			// pictureBox2
 			// 
 			this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-			this.pictureBox2.Location = new System.Drawing.Point(28, 28);
+			this.pictureBox2.Location = new System.Drawing.Point(4, 9);
 			this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
 			this.pictureBox2.Name = "pictureBox2";
 			this.pictureBox2.Size = new System.Drawing.Size(960, 591);
@@ -295,7 +295,7 @@
 			// button6
 			// 
 			this.button6.BackColor = System.Drawing.Color.Gold;
-			this.button6.Location = new System.Drawing.Point(1047, 269);
+			this.button6.Location = new System.Drawing.Point(1044, 248);
 			this.button6.Margin = new System.Windows.Forms.Padding(4);
 			this.button6.Name = "button6";
 			this.button6.Size = new System.Drawing.Size(167, 60);
@@ -307,7 +307,7 @@
 			// button4
 			// 
 			this.button4.BackColor = System.Drawing.Color.Gold;
-			this.button4.Location = new System.Drawing.Point(437, 812);
+			this.button4.Location = new System.Drawing.Point(395, 791);
 			this.button4.Margin = new System.Windows.Forms.Padding(4);
 			this.button4.Name = "button4";
 			this.button4.Size = new System.Drawing.Size(167, 60);
@@ -319,7 +319,7 @@
 			// button3
 			// 
 			this.button3.BackColor = System.Drawing.Color.Gold;
-			this.button3.Location = new System.Drawing.Point(263, 812);
+			this.button3.Location = new System.Drawing.Point(221, 791);
 			this.button3.Margin = new System.Windows.Forms.Padding(4);
 			this.button3.Name = "button3";
 			this.button3.Size = new System.Drawing.Size(167, 60);
@@ -331,7 +331,7 @@
 			// button2
 			// 
 			this.button2.BackColor = System.Drawing.Color.Gold;
-			this.button2.Location = new System.Drawing.Point(1047, 134);
+			this.button2.Location = new System.Drawing.Point(1044, 113);
 			this.button2.Margin = new System.Windows.Forms.Padding(4);
 			this.button2.Name = "button2";
 			this.button2.Size = new System.Drawing.Size(167, 60);
@@ -342,7 +342,7 @@
 			// 
 			// trackBar1
 			// 
-			this.trackBar1.Location = new System.Drawing.Point(81, 639);
+			this.trackBar1.Location = new System.Drawing.Point(163, 623);
 			this.trackBar1.Margin = new System.Windows.Forms.Padding(4);
 			this.trackBar1.Minimum = -10;
 			this.trackBar1.Name = "trackBar1";
@@ -354,7 +354,7 @@
 			// label1
 			// 
 			this.label1.AutoSize = true;
-			this.label1.Location = new System.Drawing.Point(11, 639);
+			this.label1.Location = new System.Drawing.Point(93, 623);
 			this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(70, 16);
@@ -404,7 +404,9 @@
 			this.Controls.Add(this.label1);
 			this.Controls.Add(this.pictureBox1);
 			this.Name = "Filters";
+			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Filters";
+			this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
 			this.Load += new System.EventHandler(this.Filters_Load);
 			((System.ComponentModel.ISupportInitialize)(this.trackBar3)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.trackBar2)).EndInit();

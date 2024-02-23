@@ -96,12 +96,11 @@ namespace Project_CS3
 			else
 			{
 
-				System.Drawing.Image img = pictureBox2.Image;                             // storing image into img variable of image type from picturebox1
-				Bitmap bmpInverted = new Bitmap(img.Width, img.Height);   /* creating a bitmap of the height of imported picture in picturebox which consists of the pixel data for a graphics image
-                                                                        and its attributes. A Bitmap is an object used to work with images defined by pixel data.*/
+				System.Drawing.Image img = pictureBox2.Image;                            
+				Bitmap bmpInverted = new Bitmap(img.Width, img.Height);   
 
-				ImageAttributes ia = new ImageAttributes();                 //creating an object of imageattribute ia to change the attribute of images
-				ColorMatrix cmPicture = new ColorMatrix(new float[][]       // now creating the color matrix object to change the colors or apply  image filter on image
+				ImageAttributes ia = new ImageAttributes();                 
+				ColorMatrix cmPicture = new ColorMatrix(new float[][]       
                 {
 					new float[]{0.393f, 0.349f, 0.272f, 0, 0},
 					new float[]{0.769f, 0.686f, 0.534f, 0, 0},
@@ -109,19 +108,15 @@ namespace Project_CS3
 					new float[]{0, 0, 0, 1, 0},
 					new float[]{0, 0, 0, 0, 1}
 				});
-				ia.SetColorMatrix(cmPicture);           //pass the color matrix to imageattribute object ia
-				Graphics g = Graphics.FromImage(bmpInverted);   /*create a new object of graphics named g, ; Create graphics object for alteration.
-                                                            Graphics newGraphics = Graphics.FromImage(imageFile); is the format of loading image into graphics for alteration*/
-
+				ia.SetColorMatrix(cmPicture);           
+				Graphics g = Graphics.FromImage(bmpInverted);  
 				g.DrawImage(img, new Rectangle(0, 0, img.Width, img.Height), 0, 0, img.Width, img.Height, GraphicsUnit.Pixel, ia);
 
 
-				/*   g.drawimage(image, new rectangle(location of rectangle axix-x, location axis-y, width of rectangle, height of rectangle),
-               location of image in rectangle x-axis, location of image in rectangle y-axis, width of image, height of image,
-               format of graphics unit,provide the image attributes   */
+				
 
 
-				g.Dispose();                            //Releases all resources used by this Graphics.
+				g.Dispose();                           
 				pictureBox2.Image = bmpInverted;
 
 			}
@@ -136,12 +131,11 @@ namespace Project_CS3
 			else
 			{
 
-				System.Drawing.Image img = pictureBox2.Image;                             // storing image into img variable of image type from picturebox1
-				Bitmap bmpInverted = new Bitmap(img.Width, img.Height);   /* creating a bitmap of the height of imported picture in picturebox which consists of the pixel data for a graphics image
-                                                                        and its attributes. A Bitmap is an object used to work with images defined by pixel data.*/
+				System.Drawing.Image img = pictureBox2.Image;                           
+				Bitmap bmpInverted = new Bitmap(img.Width, img.Height);   
 
-				ImageAttributes ia = new ImageAttributes();                 //creating an object of imageattribute ia to change the attribute of images
-				ColorMatrix cmPicture = new ColorMatrix(new float[][]       // now creating the color matrix object to change the colors or apply  image filter on image
+				ImageAttributes ia = new ImageAttributes();                 
+				ColorMatrix cmPicture = new ColorMatrix(new float[][]       
                 {
 					new float[]{0.33f, 0.33f, 0.33f, 0, 0},
 					new float[]{0.59f, 0.59f, 0.59f, 0, 0},
@@ -149,19 +143,16 @@ namespace Project_CS3
 					new float[]{0, 0, 0, 1, 0},
 					new float[]{0, 0, 0, 0, 1}
 				});
-				ia.SetColorMatrix(cmPicture);           //pass the color matrix to imageattribute object ia
-				Graphics g = Graphics.FromImage(bmpInverted);   /*create a new object of graphics named g, ; Create graphics object for alteration.
-                                                            Graphics newGraphics = Graphics.FromImage(imageFile); is the format of loading image into graphics for alteration*/
+				ia.SetColorMatrix(cmPicture);           
+				Graphics g = Graphics.FromImage(bmpInverted);   
 
 				g.DrawImage(img, new Rectangle(0, 0, img.Width, img.Height), 0, 0, img.Width, img.Height, GraphicsUnit.Pixel, ia);
 
 
-				/*   g.drawimage(image, new rectangle(location of rectangle axix-x, location axis-y, width of rectangle, height of rectangle),
-               location of image in rectangle x-axis, location of image in rectangle y-axis, width of image, height of image,
-               format of graphics unit,provide the image attributes   */
+				
 
 
-				g.Dispose();                            //Releases all resources used by this Graphics.
+				g.Dispose();                            
 				pictureBox2.Image = bmpInverted;
 
 			}
@@ -176,12 +167,12 @@ namespace Project_CS3
 			else
 			{
 
-				System.Drawing.Image img = pictureBox2.Image;                             // storing image into img variable of image type from picturebox1
-				Bitmap bmpInverted = new Bitmap(img.Width, img.Height);   /* creating a bitmap of the height of imported picture in picturebox which consists of the pixel data for a graphics image
-                                                                        and its attributes. A Bitmap is an object used to work with images defined by pixel data.*/
+				System.Drawing.Image img = pictureBox2.Image;                            
+				Bitmap bmpInverted = new Bitmap(img.Width, img.Height);   
+                                                                        
 
-				ImageAttributes ia = new ImageAttributes();                 //creating an object of imageattribute ia to change the attribute of images
-				ColorMatrix cmPicture = new ColorMatrix(new float[][]       // now creating the color matrix object to change the colors or apply  image filter on image
+				ImageAttributes ia = new ImageAttributes();                 
+				ColorMatrix cmPicture = new ColorMatrix(new float[][]      
                 {
 					new float[]{-1, 0, 0, 0, 1.00f},
 					new float[]{0, -1, 0, 0, 1.00f},
@@ -189,19 +180,15 @@ namespace Project_CS3
 					new float[]{0, 0, 0, 1, 0},
 					new float[]{1, 1, 1, 0, 1}
 				});
-				ia.SetColorMatrix(cmPicture);           //pass the color matrix to imageattribute object ia
-				Graphics g = Graphics.FromImage(bmpInverted);   /*create a new object of graphics named g, ; Create graphics object for alteration.
-                                                            Graphics newGraphics = Graphics.FromImage(imageFile); is the format of loading image into graphics for alteration*/
+				ia.SetColorMatrix(cmPicture);           
+				Graphics g = Graphics.FromImage(bmpInverted);  
 
 				g.DrawImage(img, new Rectangle(0, 0, img.Width, img.Height), 0, 0, img.Width, img.Height, GraphicsUnit.Pixel, ia);
 
 
-				/*   g.drawimage(image, new rectangle(location of rectangle axix-x, location axis-y, width of rectangle, height of rectangle),
-               location of image in rectangle x-axis, location of image in rectangle y-axis, width of image, height of image,
-               format of graphics unit,provide the image attributes   */
 
 
-				g.Dispose();                            //Releases all resources used by this Graphics.
+				g.Dispose();                           
 				pictureBox2.Image = bmpInverted;
 
 			}
@@ -216,12 +203,12 @@ namespace Project_CS3
 			else
 			{
 
-				System.Drawing.Image img = pictureBox2.Image;                             // storing image into img variable of image type from picturebox1
-				Bitmap bmpInverted = new Bitmap(img.Width, img.Height);   /* creating a bitmap of the height of imported picture in picturebox which consists of the pixel data for a graphics image
-                                                                        and its attributes. A Bitmap is an object used to work with images defined by pixel data.*/
+				System.Drawing.Image img = pictureBox2.Image;                             
+				Bitmap bmpInverted = new Bitmap(img.Width, img.Height);   
+                                                                        
 
-				ImageAttributes ia = new ImageAttributes();                 //creating an object of imageattribute ia to change the attribute of images
-				ColorMatrix cmPicture = new ColorMatrix(new float[][]       // now creating the color matrix object to change the colors or apply  image filter on image
+				ImageAttributes ia = new ImageAttributes();                 
+				ColorMatrix cmPicture = new ColorMatrix(new float[][]       
                 {
 					new float[]{0, 0, 1, 0, 0},
 					new float[]{0, 1, 0, 0, 0},
@@ -229,19 +216,16 @@ namespace Project_CS3
 					new float[]{0, 0, 0, 1, 0},
 					new float[]{0, 0, 0, 0, 1}
 				});
-				ia.SetColorMatrix(cmPicture);           //pass the color matrix to imageattribute object ia
-				Graphics g = Graphics.FromImage(bmpInverted);   /*create a new object of graphics named g, ; Create graphics object for alteration.
-                                                            Graphics newGraphics = Graphics.FromImage(imageFile); is the format of loading image into graphics for alteration*/
+				ia.SetColorMatrix(cmPicture);          
+				Graphics g = Graphics.FromImage(bmpInverted);   
 
 				g.DrawImage(img, new Rectangle(0, 0, img.Width, img.Height), 0, 0, img.Width, img.Height, GraphicsUnit.Pixel, ia);
 
 
-				/*   g.drawimage(image, new rectangle(location of rectangle axix-x, location axis-y, width of rectangle, height of rectangle),
-               location of image in rectangle x-axis, location of image in rectangle y-axis, width of image, height of image,
-               format of graphics unit,provide the image attributes   */
+				
 
 
-				g.Dispose();                            //Releases all resources used by this Graphics.
+				g.Dispose();                            
 				pictureBox2.Image = bmpInverted;
 
 			}
@@ -256,12 +240,11 @@ namespace Project_CS3
 			else
 			{
 
-				System.Drawing.Image img = pictureBox2.Image;                             // storing image into img variable of image type from picturebox1
-				Bitmap bmpInverted = new Bitmap(img.Width, img.Height);   /* creating a bitmap of the height of imported picture in picturebox which consists of the pixel data for a graphics image
-                                                                        and its attributes. A Bitmap is an object used to work with images defined by pixel data.*/
+				System.Drawing.Image img = pictureBox2.Image;                             
+				Bitmap bmpInverted = new Bitmap(img.Width, img.Height); 
 
-				ImageAttributes ia = new ImageAttributes();                 //creating an object of imageattribute ia to change the attribute of images
-				ColorMatrix cmPicture = new ColorMatrix(new float[][]       // now creating the color matrix object to change the colors or apply  image filter on image
+				ImageAttributes ia = new ImageAttributes();                 
+				ColorMatrix cmPicture = new ColorMatrix(new float[][]       
                 {
 					new float[]{1.5f, 1.5f, 1.5f, 0, 0},
 					new float[]{1.5f, 1.5f, 1.5f, 0, 0},
@@ -269,19 +252,15 @@ namespace Project_CS3
 					new float[]{0, 0, 0, 1, 0},
 					new float[]{-1, -1, -1, 0, 1}
 				});
-				ia.SetColorMatrix(cmPicture);           //pass the color matrix to imageattribute object ia
-				Graphics g = Graphics.FromImage(bmpInverted);   /*create a new object of graphics named g, ; Create graphics object for alteration.
-                                                            Graphics newGraphics = Graphics.FromImage(imageFile); is the format of loading image into graphics for alteration*/
-
+				ia.SetColorMatrix(cmPicture);           
+				Graphics g = Graphics.FromImage(bmpInverted);   
 				g.DrawImage(img, new Rectangle(0, 0, img.Width, img.Height), 0, 0, img.Width, img.Height, GraphicsUnit.Pixel, ia);
 
 
-				/*   g.drawimage(image, new rectangle(location of rectangle axix-x, location axis-y, width of rectangle, height of rectangle),
-               location of image in rectangle x-axis, location of image in rectangle y-axis, width of image, height of image,
-               format of graphics unit,provide the image attributes   */
+				
 
 
-				g.Dispose();                            //Releases all resources used by this Graphics.
+				g.Dispose();                            
 				pictureBox2.Image = bmpInverted;
 
 			}
@@ -296,12 +275,12 @@ namespace Project_CS3
 			else
 			{
 
-				System.Drawing.Image img = pictureBox2.Image;                             // storing image into img variable of image type from picturebox1
-				Bitmap bmpInverted = new Bitmap(img.Width, img.Height);   /* creating a bitmap of the height of imported picture in picturebox which consists of the pixel data for a graphics image
-                                                                        and its attributes. A Bitmap is an object used to work with images defined by pixel data.*/
+				System.Drawing.Image img = pictureBox2.Image;                             
+				Bitmap bmpInverted = new Bitmap(img.Width, img.Height);   
+                                                                        
 
-				ImageAttributes ia = new ImageAttributes();                 //creating an object of imageattribute ia to change the attribute of images
-				ColorMatrix cmPicture = new ColorMatrix(new float[][]       // now creating the color matrix object to change the colors or apply  image filter on image
+				ImageAttributes ia = new ImageAttributes();                 
+				ColorMatrix cmPicture = new ColorMatrix(new float[][]       
                 {
 					new float[]{1.438f, -0.062f, -0.062f, 0, 0},
 					new float[]{-0.122f, 1.378f, -0.122f, 0, 0},
@@ -309,19 +288,16 @@ namespace Project_CS3
 					new float[]{0, 0, 0, 1, 0},
 					new float[]{-0.03f, 0.05f, -0.02f, 0, 1}
 				});
-				ia.SetColorMatrix(cmPicture);           //pass the color matrix to imageattribute object ia
-				Graphics g = Graphics.FromImage(bmpInverted);   /*create a new object of graphics named g, ; Create graphics object for alteration.
-                                                            Graphics newGraphics = Graphics.FromImage(imageFile); is the format of loading image into graphics for alteration*/
+				ia.SetColorMatrix(cmPicture);          
+				Graphics g = Graphics.FromImage(bmpInverted);   
 
 				g.DrawImage(img, new Rectangle(0, 0, img.Width, img.Height), 0, 0, img.Width, img.Height, GraphicsUnit.Pixel, ia);
 
 
-				/*   g.drawimage(image, new rectangle(location of rectangle axix-x, location axis-y, width of rectangle, height of rectangle),
-               location of image in rectangle x-axis, location of image in rectangle y-axis, width of image, height of image,
-               format of graphics unit,provide the image attributes   */
+				
 
 
-				g.Dispose();                            //Releases all resources used by this Graphics.
+				g.Dispose();                           
 				pictureBox2.Image = bmpInverted;
 
 			}
@@ -336,13 +312,13 @@ namespace Project_CS3
 			else
 			{
 
-				System.Drawing.Image img = pictureBox2.Image;                             // storing image into img variable of image type from picturebox1
-				Bitmap bmpInverted = new Bitmap(img.Width, img.Height);   /* creating a bitmap of the height of imported picture in picturebox which consists of the pixel data for a graphics image
-                                                                       and its attributes. A Bitmap is an object used to work with images defined by pixel data.*/
+				System.Drawing.Image img = pictureBox2.Image;                            
+				Bitmap bmpInverted = new Bitmap(img.Width, img.Height);   
+                                                                       
 
 				ImageAttributes ia = new ImageAttributes();
-				//creating an object of imageattribute ia to change the attribute of images
-				ColorMatrix cmPicture = new ColorMatrix(new float[][]       // now creating the color matrix object to change the colors or apply  image filter on image
+				
+				ColorMatrix cmPicture = new ColorMatrix(new float[][]      
                 {
 					new float[]{1, 0, 0, 0, 0},
 					new float[]{0, 0.8f, 0, 0, 0},
@@ -350,19 +326,16 @@ namespace Project_CS3
 					new float[]{0, 0, 0, 0.5f, 0},
 					new float[]{0, 0, 0, 0, 1}
 				});
-				ia.SetColorMatrix(cmPicture);           //pass the color matrix to imageattribute object ia
-				Graphics g = Graphics.FromImage(bmpInverted);   /*create a new object of graphics named g, ; Create graphics object for alteration.
-                                                            Graphics newGraphics = Graphics.FromImage(imageFile); is the format of loading image into graphics for alteration*/
+				ia.SetColorMatrix(cmPicture);           
+				Graphics g = Graphics.FromImage(bmpInverted);   
 
 				g.DrawImage(img, new Rectangle(0, 0, img.Width, img.Height), 0, 0, img.Width, img.Height, GraphicsUnit.Pixel, ia);
 
 
-				/*   g.drawimage(image, new rectangle(location of rectangle axix-x, location axis-y, width of rectangle, height of rectangle),
-               location of image in rectangle x-axis, location of image in rectangle y-axis, width of image, height of image,
-               format of graphics unit,provide the image attributes   */
+				
 
 
-				g.Dispose();                            //Releases all resources used by this Graphics.
+				g.Dispose();                            
 				pictureBox2.Image = bmpInverted;
 
 			}
@@ -377,13 +350,12 @@ namespace Project_CS3
 			else
 			{
 
-				System.Drawing.Image img = pictureBox2.Image;                             // storing image into img variable of image type from picturebox1
-				Bitmap bmpInverted = new Bitmap(img.Width, img.Height);   /* creating a bitmap of the height of imported picture in picturebox which consists of the pixel data for a graphics image
-                                                                       and its attributes. A Bitmap is an object used to work with images defined by pixel data.*/
-
+				System.Drawing.Image img = pictureBox2.Image;                             
+				Bitmap bmpInverted = new Bitmap(img.Width, img.Height);   
+                                                                       
 				ImageAttributes ia = new ImageAttributes();
-				//creating an object of imageattribute ia to change the attribute of images
-				ColorMatrix cmPicture = new ColorMatrix(new float[][]       // now creating the color matrix object to change the colors or apply  image filter on image
+				
+				ColorMatrix cmPicture = new ColorMatrix(new float[][]       
                 {
 					new float[]{1, 0, 0, 0, 0},
 					new float[]{0, 0.8f, 0, 0, 0},
@@ -391,19 +363,16 @@ namespace Project_CS3
 					new float[]{0, 0, 0, 0.5f, 0},
 					new float[]{0, 0, 0, 0, 1}
 				});
-				ia.SetColorMatrix(cmPicture);           //pass the color matrix to imageattribute object ia
-				Graphics g = Graphics.FromImage(bmpInverted);   /*create a new object of graphics named g, ; Create graphics object for alteration.
-                                                            Graphics newGraphics = Graphics.FromImage(imageFile); is the format of loading image into graphics for alteration*/
+				ia.SetColorMatrix(cmPicture);          
+				Graphics g = Graphics.FromImage(bmpInverted);   
 
 				g.DrawImage(img, new Rectangle(0, 0, img.Width, img.Height), 0, 0, img.Width, img.Height, GraphicsUnit.Pixel, ia);
 
 
-				/*   g.drawimage(image, new rectangle(location of rectangle axix-x, location axis-y, width of rectangle, height of rectangle),
-               location of image in rectangle x-axis, location of image in rectangle y-axis, width of image, height of image,
-               format of graphics unit,provide the image attributes   */
+				
 
 
-				g.Dispose();                            //Releases all resources used by this Graphics.
+				g.Dispose();                            
 				pictureBox2.Image = bmpInverted;
 
 			}
@@ -433,19 +402,19 @@ namespace Project_CS3
 
 			Rectangle rect = new Rectangle(cropX, cropY, cropWidth, cropHeight);
 
-			//First we define a rectangle with the help of already calculated points
+			
 
 			Bitmap OriginalImage = new Bitmap(pictureBox2.Image, pictureBox2.Width, pictureBox2.Height);
 
-			//Original image
+	
 
 			Bitmap _img = new Bitmap(cropWidth, cropHeight);
 
-			// for cropinf image
+			
 
 			Graphics g = Graphics.FromImage(_img);
 
-			// create graphics
+	
 
 			g.InterpolationMode = System.Drawing.Drawing2D.InterpolationMode.HighQualityBicubic;
 
@@ -453,7 +422,7 @@ namespace Project_CS3
 
 			g.CompositingQuality = System.Drawing.Drawing2D.CompositingQuality.HighQuality;
 
-			//set image attributes
+		
 
 			g.DrawImage(OriginalImage, 0, 0, rect, GraphicsUnit.Pixel);
 
@@ -465,7 +434,7 @@ namespace Project_CS3
 
 			pictureBox2.Height = _img.Height;
 
-			//pictureBox2.Location= new Point( 232,12);
+	
 
 			btnCrop.Enabled = false;
 		}
@@ -475,8 +444,7 @@ namespace Project_CS3
 			float changeb = trackBar1.Value * 0.1f;
 			float changec = trackBar2.Value * 0.1f;
 			float changes = trackBar3.Value * 0.1f;
-			// float changealpha = trackBar3.Value * 0.1f;
-			// float changep = trackBar3.Value * 0.1f;
+		
 
 			trackBar1.Text = changeb.ToString();
 			trackBar2.Text = changec.ToString();
@@ -491,12 +459,12 @@ namespace Project_CS3
 
 
 
-				System.Drawing.Image img = pictureBox2.Image;                             // storing image into img variable of image type from picturebox1
-				Bitmap bmpInverted = new Bitmap(img.Width, img.Height);   /* creating a bitmap of the height of imported picture in picturebox which consists of the pixel data for a graphics image
-                                                                        and its attributes. A Bitmap is an object used to work with images defined by pixel data.*/
+				System.Drawing.Image img = pictureBox2.Image;                             
+				Bitmap bmpInverted = new Bitmap(img.Width, img.Height);   
+                                                                        
 
-				ImageAttributes ia = new ImageAttributes();                 //creating an object of imageattribute ia to change the attribute of images
-				ColorMatrix cmPicture = new ColorMatrix(new float[][]       // now creating the color matrix object to change the colors or apply  image filter on image
+				ImageAttributes ia = new ImageAttributes();                 
+				ColorMatrix cmPicture = new ColorMatrix(new float[][]       
                 {
 					new float[]{1, 0, 0, 0, 0},
 					new float[]{0, 1, 0, 0, 0},
@@ -504,19 +472,16 @@ namespace Project_CS3
 					new float[]{0, 0, 0, 1, 0},
 					new float[]{0+changeb, 0+changeb, 0+changeb, 0, 1}
 				});
-				ia.SetColorMatrix(cmPicture);           //pass the color matrix to imageattribute object ia
-				Graphics g = Graphics.FromImage(bmpInverted);   /*create a new object of graphics named g, ; Create graphics object for alteration.
-                                                            Graphics newGraphics = Graphics.FromImage(imageFile); is the format of loading image into graphics for alteration*/
+				ia.SetColorMatrix(cmPicture);           
+				Graphics g = Graphics.FromImage(bmpInverted);   
 
 				g.DrawImage(img, new Rectangle(0, 0, img.Width, img.Height), 0, 0, img.Width, img.Height, GraphicsUnit.Pixel, ia);
 
 
-				/*   g.drawimage(image, new rectangle(location of rectangle axix-x, location axis-y, width of rectangle, height of rectangle),
-               location of image in rectangle x-axis, location of image in rectangle y-axis, width of image, height of image,
-               format of graphics unit,provide the image attributes   */
+				
 
 
-				g.Dispose();                            //Releases all resources used by this Graphics.
+				g.Dispose();                            
 				pictureBox2.Image = bmpInverted;
 
 
@@ -529,8 +494,7 @@ namespace Project_CS3
 			float changec = trackBar2.Value * 0.1f;
 			float changes = trackBar3.Value * 0.1f;
 			float t = 0;
-			// float changealpha = trackBar3.Value * 0.1f;
-			// float changep = trackBar3.Value * 0.1f;
+			
 
 			trackBar1.Text = changeb.ToString();
 			trackBar2.Text = changec.ToString();
@@ -545,12 +509,12 @@ namespace Project_CS3
 
 
 
-				System.Drawing.Image img = pictureBox2.Image;                             // storing image into img variable of image type from picturebox1
-				Bitmap bmpInverted = new Bitmap(img.Width, img.Height);   /* creating a bitmap of the height of imported picture in picturebox which consists of the pixel data for a graphics image
-                                                                        and its attributes. A Bitmap is an object used to work with images defined by pixel data.*/
+				System.Drawing.Image img = pictureBox2.Image;                             
+				Bitmap bmpInverted = new Bitmap(img.Width, img.Height);   
+                                                                        
 
-				ImageAttributes ia = new ImageAttributes();                 //creating an object of imageattribute ia to change the attribute of images
-				ColorMatrix cmPicture = new ColorMatrix(new float[][]       // now creating the color matrix object to change the colors or apply  image filter on image
+				ImageAttributes ia = new ImageAttributes();                 
+				ColorMatrix cmPicture = new ColorMatrix(new float[][]      
                 {
 					new float[]{1+changec, 0, 0, 0, 0},
 					new float[]{0, 1+changec, 0, 0, 0},
@@ -562,19 +526,14 @@ namespace Project_CS3
 				if (changec == 0)
 					t = (1f - changec) / 2f;
 
-				ia.SetColorMatrix(cmPicture);           //pass the color matrix to imageattribute object ia
-				Graphics g = Graphics.FromImage(bmpInverted);   /*create a new object of graphics named g, ; Create graphics object for alteration.
-                                                            Graphics newGraphics = Graphics.FromImage(imageFile); is the format of loading image into graphics for alteration*/
-
+				ia.SetColorMatrix(cmPicture);           
+				Graphics g = Graphics.FromImage(bmpInverted);   
 				g.DrawImage(img, new Rectangle(0, 0, img.Width, img.Height), 0, 0, img.Width, img.Height, GraphicsUnit.Pixel, ia);
 
 
-				/*   g.drawimage(image, new rectangle(location of rectangle axix-x, location axis-y, width of rectangle, height of rectangle),
-               location of image in rectangle x-axis, location of image in rectangle y-axis, width of image, height of image,
-               format of graphics unit,provide the image attributes   */
 
 
-				g.Dispose();                            //Releases all resources used by this Graphics.
+				g.Dispose();                            
 				pictureBox2.Image = bmpInverted;
 
 
@@ -586,8 +545,7 @@ namespace Project_CS3
 			float changeb = trackBar1.Value * 0.1f;
 			float changec = trackBar2.Value * 0.1f;
 			float changes = trackBar3.Value * 0.1f;
-			// float changealpha = trackBar3.Value * 0.1f;
-			// float changep = trackBar3.Value * 0.1f;
+			
 
 			float lumR = 0.3086f;
 
@@ -615,12 +573,12 @@ namespace Project_CS3
 
 
 
-				System.Drawing.Image img = pictureBox2.Image;                             // storing image into img variable of image type from picturebox1
-				Bitmap bmpInverted = new Bitmap(img.Width, img.Height);   /* creating a bitmap of the height of imported picture in picturebox which consists of the pixel data for a graphics image
-                                                                        and its attributes. A Bitmap is an object used to work with images defined by pixel data.*/
+				System.Drawing.Image img = pictureBox2.Image;                             
+				Bitmap bmpInverted = new Bitmap(img.Width, img.Height);   
+                                                                        
 
-				ImageAttributes ia = new ImageAttributes();                 //creating an object of imageattribute ia to change the attribute of images
-				ColorMatrix cmPicture = new ColorMatrix(new float[][]       // now creating the color matrix object to change the colors or apply  image filter on image
+				ImageAttributes ia = new ImageAttributes();                 
+				ColorMatrix cmPicture = new ColorMatrix(new float[][]       
                 {
 					new float[]{sr+changes, sr, sr, 0, 0},
 					new float[]{sg, sg+changes, sg, 0, 0},
@@ -628,19 +586,15 @@ namespace Project_CS3
 					new float[]{0, 0, 0, 1, 0},
 					new float[]{0, 0, 0, 0, 1}
 				});
-				ia.SetColorMatrix(cmPicture);           //pass the color matrix to imageattribute object ia
-				Graphics g = Graphics.FromImage(bmpInverted);   /*create a new object of graphics named g, ; Create graphics object for alteration.
-                                                            Graphics newGraphics = Graphics.FromImage(imageFile); is the format of loading image into graphics for alteration*/
-
+				ia.SetColorMatrix(cmPicture);           
+				Graphics g = Graphics.FromImage(bmpInverted);   
 				g.DrawImage(img, new Rectangle(0, 0, img.Width, img.Height), 0, 0, img.Width, img.Height, GraphicsUnit.Pixel, ia);
 
 
-				/*   g.drawimage(image, new rectangle(location of rectangle axix-x, location axis-y, width of rectangle, height of rectangle),
-               location of image in rectangle x-axis, location of image in rectangle y-axis, width of image, height of image,
-               format of graphics unit,provide the image attributes   */
+				
 
 
-				g.Dispose();                            //Releases all resources used by this Graphics.
+				g.Dispose();                            
 				pictureBox2.Image = bmpInverted;
 
 
@@ -706,7 +660,7 @@ namespace Project_CS3
 			System.Drawing.Bitmap image = (Bitmap)pictureBox2.Image;
 			AForge.Imaging.Filters.ConservativeSmoothing filter = new AForge.Imaging.Filters.ConservativeSmoothing();
 			pictureBox2.Image = filter.Apply(image);
-			//RChanges.Clear();
+		
 
 		}
 
@@ -716,8 +670,7 @@ namespace Project_CS3
 			System.Drawing.Bitmap image = (Bitmap)pictureBox2.Image;
 			AForge.Imaging.Filters.Sepia filter = new AForge.Imaging.Filters.Sepia();
 			pictureBox2.Image = filter.Apply(image);
-			//RChanges.Clear();
-
+		
 		}
 
 		void GaussianSharp()
@@ -726,7 +679,7 @@ namespace Project_CS3
 			System.Drawing.Bitmap image = (Bitmap)pictureBox2.Image;
 			AForge.Imaging.Filters.GaussianSharpen filter = new AForge.Imaging.Filters.GaussianSharpen();
 			pictureBox2.Image = filter.Apply(image);
-			//RChanges.Clear();
+			
 
 		}
 
@@ -740,7 +693,7 @@ namespace Project_CS3
 			filter.VerticalWavesCount = 3;
 			filter.VerticalWavesAmplitude = 15;
 			pictureBox2.Image = filter.Apply(image);
-			//RChanges.Clear();
+		
 
 		}
 
@@ -750,7 +703,7 @@ namespace Project_CS3
 			System.Drawing.Bitmap image = (Bitmap)pictureBox2.Image;
 			AForge.Imaging.Filters.Sharpen filter = new AForge.Imaging.Filters.Sharpen();
 			pictureBox2.Image = filter.Apply(image);
-			//RChanges.Clear();
+			
 
 		}
 
