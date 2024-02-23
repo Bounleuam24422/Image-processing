@@ -15,6 +15,95 @@ namespace Project_CS3
 		public Main()
 		{
 			InitializeComponent();
+			customizeDesing();
 		}
+		private Form activeForm = null;
+		public void openChildForm(Form childForm)
+		{
+			if (activeForm != null)
+				activeForm.Close();
+			activeForm = childForm;
+			childForm.TopLevel = false;
+			childForm.FormBorderStyle = FormBorderStyle.None;
+			childForm.Dock = DockStyle.Fill;
+			lblTitle.Text = childForm.Text;
+			panelfilters.Controls.Add(childForm);
+			panelfilters.Tag = childForm;
+			childForm.BringToFront();
+			childForm.Show();
+		}
+
+		/* panelSlide*/
+		private void customizeDesing()
+		{
+			panalFilter_Type.Visible = false;
+		}
+
+		/* hideSubmenu*/
+		private void hideSubmenu()
+		{
+			if (panalFilter_Type.Visible == true)
+				panalFilter_Type.Visible = false;
+
+		}
+
+		/*showSubmenu*/
+		private void showSubmenu(Panel submenu)
+		{
+			if (submenu.Visible == false)
+			{
+				hideSubmenu();
+				submenu.Visible = true;
+			}
+			else
+				submenu.Visible = false;
+
+		}
+
+		private void btnFter_Typ_Click(object sender, EventArgs e)
+		{
+			showSubmenu(panalFilter_Type);
+		}
+
+		private void btnFilter_Click(object sender, EventArgs e)
+		{
+			
+		}
+
+		private void btnbinary_Click(object sender, EventArgs e)
+		{
+
+		}
+
+		private void btnMlogy_Click(object sender, EventArgs e)
+		{
+
+		}
+
+		private void btnEdDtion_Click(object sender, EventArgs e)
+		{
+
+		}
+
+		private void btnHisgm_Click(object sender, EventArgs e)
+		{
+
+		}
+
+		private void btnCntour_Click(object sender, EventArgs e)
+		{
+
+		}
+
+		private void btnWebcam_Click(object sender, EventArgs e)
+		{
+
+		}
+
+		private void button7_Click(object sender, EventArgs e)
+		{
+
+		}
+		//Hello
 	}
 }

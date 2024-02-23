@@ -14,7 +14,7 @@
     <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
+    <PlatformTarget>x64</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -52,16 +52,52 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Binary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Binary.Designer.cs">
+      <DependentUpon>Binary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edge Detection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Edge Detection.Designer.cs">
+      <DependentUpon>Edge Detection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Histogram Equalization.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Histogram Equalization.Designer.cs">
+      <DependentUpon>Histogram Equalization.cs</DependentUpon>
+    </Compile>
     <Compile Include="Main.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Main.Designer.cs">
       <DependentUpon>Main.cs</DependentUpon>
     </Compile>
+    <Compile Include="Morphology.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Morphology.Designer.cs">
+      <DependentUpon>Morphology.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Binary.resx">
+      <DependentUpon>Binary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edge Detection.resx">
+      <DependentUpon>Edge Detection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Histogram Equalization.resx">
+      <DependentUpon>Histogram Equalization.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Morphology.resx">
+      <DependentUpon>Morphology.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -101,6 +137,7 @@
     </Content>
     <None Include="Resources\setting.png" />
     <None Include="Resources\crop.png" />
+    <None Include="Resources\399256985_1055743368733719_2046660532677995053_n.jpg" />
     <Content Include="vcruntime140.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

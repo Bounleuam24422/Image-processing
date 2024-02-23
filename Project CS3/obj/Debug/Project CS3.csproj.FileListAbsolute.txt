@@ -20,3 +20,7 @@ C:\Users\GIGABYTE\source\repos\Image Processing\Project CS3\obj\Debug\Project CS
 C:\Users\GIGABYTE\source\repos\Image Processing\Project CS3\obj\Debug\Project CS3.exe
 C:\Users\GIGABYTE\source\repos\Image Processing\Project CS3\obj\Debug\Project CS3.pdb
 C:\Users\GIGABYTE\source\repos\Image Processing\Project CS3\obj\Debug\Project_CS3.Main.resources
+C:\Users\GIGABYTE\source\repos\Image Processing\Project CS3\obj\Debug\Project_CS3.Binary.resources
+C:\Users\GIGABYTE\source\repos\Image Processing\Project CS3\obj\Debug\Project_CS3.Morphology.resources
+C:\Users\GIGABYTE\source\repos\Image Processing\Project CS3\obj\Debug\Project_CS3.Edge_Detection.resources
+C:\Users\GIGABYTE\source\repos\Image Processing\Project CS3\obj\Debug\Project_CS3.Histogram_Equalization.resources
