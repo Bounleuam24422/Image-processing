@@ -1,4 +1,23 @@
-﻿using Emgu.CV.Structure;
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace Project_CS3
+{
+	public partial class Histogram : Form
+	{
+		public Histogram()
+		{
+			InitializeComponent();
+		}
+		/*
+		 using Emgu.CV.Structure;
 using Emgu.CV;
 using Emgu.CV.CvEnum;
 using System;
@@ -150,5 +169,10 @@ namespace Project_CS3
 				htgGray.Refresh();
 			}
 		}
+	}
+}
+
+		 
+		 */
 	}
 }
