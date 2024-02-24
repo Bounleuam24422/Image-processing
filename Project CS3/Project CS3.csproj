@@ -210,6 +210,10 @@
     <None Include="Resources\picf13.png" />
     <None Include="Resources\pic7.png" />
     <None Include="Resources\filter.png" />
+    <None Include="Resources\filter %282%29.png" />
+    <None Include="Resources\file %281%29.png" />
+    <None Include="Resources\filter %281%29.png" />
+    <None Include="Resources\file %281%291.png" />
     <Content Include="vcruntime140.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

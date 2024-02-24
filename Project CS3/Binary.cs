@@ -176,6 +176,11 @@ namespace Project_CS3
 			imgBinary.Image = binaryImage;
 		}
 
+		private void btnsubBinary_Click(object sender, EventArgs e)
+		{
+			showSubmenu(panelBimary);
+		}
+
 		private void pictureBox4_Click(object sender, EventArgs e)
 		{
 			if (oriImage == null)

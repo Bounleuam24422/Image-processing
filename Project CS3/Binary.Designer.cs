@@ -32,31 +32,32 @@
 			this.panel1 = new System.Windows.Forms.Panel();
 			this.imgInput = new Emgu.CV.UI.ImageBox();
 			this.imgBinary = new Emgu.CV.UI.ImageBox();
-			this.imgGray = new Emgu.CV.UI.ImageBox();
-			this.pictureBox4 = new System.Windows.Forms.PictureBox();
-			this.pictureBox3 = new System.Windows.Forms.PictureBox();
-			this.pictureBox2 = new System.Windows.Forms.PictureBox();
-			this.pictureBox1 = new System.Windows.Forms.PictureBox();
-			this.pictureBox15 = new System.Windows.Forms.PictureBox();
-			this.btnClose = new System.Windows.Forms.Button();
-			this.btnSave = new System.Windows.Forms.Button();
-			this.btnOpen = new System.Windows.Forms.Button();
 			this.label12 = new System.Windows.Forms.Label();
 			this.label11 = new System.Windows.Forms.Label();
 			this.label10 = new System.Windows.Forms.Label();
 			this.panelBimary = new System.Windows.Forms.Panel();
-			this.label1 = new System.Windows.Forms.Label();
 			this.label2 = new System.Windows.Forms.Label();
+			this.pictureBox15 = new System.Windows.Forms.PictureBox();
+			this.label1 = new System.Windows.Forms.Label();
+			this.pictureBox1 = new System.Windows.Forms.PictureBox();
+			this.pictureBox2 = new System.Windows.Forms.PictureBox();
+			this.pictureBox3 = new System.Windows.Forms.PictureBox();
+			this.pictureBox4 = new System.Windows.Forms.PictureBox();
+			this.btnsubBinary = new System.Windows.Forms.Button();
+			this.imgGray = new Emgu.CV.UI.ImageBox();
+			this.btnClose = new System.Windows.Forms.Button();
+			this.btnSave = new System.Windows.Forms.Button();
+			this.btnOpen = new System.Windows.Forms.Button();
 			this.panel1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.imgInput)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.imgBinary)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.imgGray)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
 			this.panelBimary.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.imgGray)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// panel1
@@ -86,113 +87,6 @@
 			this.imgBinary.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
 			this.imgBinary.TabIndex = 13;
 			this.imgBinary.TabStop = false;
-			// 
-			// imgGray
-			// 
-			this.imgGray.Location = new System.Drawing.Point(1543, 628);
-			this.imgGray.Name = "imgGray";
-			this.imgGray.Size = new System.Drawing.Size(10, 10);
-			this.imgGray.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-			this.imgGray.TabIndex = 15;
-			this.imgGray.TabStop = false;
-			this.imgGray.Visible = false;
-			// 
-			// pictureBox4
-			// 
-			this.pictureBox4.Image = global::Project_CS3.Properties.Resources.picB5;
-			this.pictureBox4.Location = new System.Drawing.Point(16, 472);
-			this.pictureBox4.Name = "pictureBox4";
-			this.pictureBox4.Size = new System.Drawing.Size(94, 55);
-			this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-			this.pictureBox4.TabIndex = 99;
-			this.pictureBox4.TabStop = false;
-			this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
-			// 
-			// pictureBox3
-			// 
-			this.pictureBox3.Image = global::Project_CS3.Properties.Resources.picB4;
-			this.pictureBox3.Location = new System.Drawing.Point(15, 358);
-			this.pictureBox3.Name = "pictureBox3";
-			this.pictureBox3.Size = new System.Drawing.Size(94, 55);
-			this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-			this.pictureBox3.TabIndex = 99;
-			this.pictureBox3.TabStop = false;
-			this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
-			// 
-			// pictureBox2
-			// 
-			this.pictureBox2.Image = global::Project_CS3.Properties.Resources.picB3;
-			this.pictureBox2.Location = new System.Drawing.Point(15, 244);
-			this.pictureBox2.Name = "pictureBox2";
-			this.pictureBox2.Size = new System.Drawing.Size(94, 55);
-			this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-			this.pictureBox2.TabIndex = 99;
-			this.pictureBox2.TabStop = false;
-			this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
-			// 
-			// pictureBox1
-			// 
-			this.pictureBox1.Image = global::Project_CS3.Properties.Resources.picB2;
-			this.pictureBox1.Location = new System.Drawing.Point(11, 139);
-			this.pictureBox1.Name = "pictureBox1";
-			this.pictureBox1.Size = new System.Drawing.Size(94, 55);
-			this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-			this.pictureBox1.TabIndex = 99;
-			this.pictureBox1.TabStop = false;
-			this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-			// 
-			// pictureBox15
-			// 
-			this.pictureBox15.Image = global::Project_CS3.Properties.Resources.picB1;
-			this.pictureBox15.Location = new System.Drawing.Point(11, 36);
-			this.pictureBox15.Name = "pictureBox15";
-			this.pictureBox15.Size = new System.Drawing.Size(94, 55);
-			this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-			this.pictureBox15.TabIndex = 99;
-			this.pictureBox15.TabStop = false;
-			this.pictureBox15.Click += new System.EventHandler(this.pictureBox15_Click);
-			// 
-			// btnClose
-			// 
-			this.btnClose.BackColor = System.Drawing.Color.HotPink;
-			this.btnClose.Image = global::Project_CS3.Properties.Resources.door_open__1_;
-			this.btnClose.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.btnClose.Location = new System.Drawing.Point(760, 683);
-			this.btnClose.Name = "btnClose";
-			this.btnClose.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-			this.btnClose.Size = new System.Drawing.Size(167, 60);
-			this.btnClose.TabIndex = 20;
-			this.btnClose.Text = "Exit";
-			this.btnClose.UseVisualStyleBackColor = false;
-			this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
-			// 
-			// btnSave
-			// 
-			this.btnSave.BackColor = System.Drawing.Color.HotPink;
-			this.btnSave.Image = global::Project_CS3.Properties.Resources.save_to_drive;
-			this.btnSave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.btnSave.Location = new System.Drawing.Point(528, 683);
-			this.btnSave.Name = "btnSave";
-			this.btnSave.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-			this.btnSave.Size = new System.Drawing.Size(167, 60);
-			this.btnSave.TabIndex = 20;
-			this.btnSave.Text = "Save";
-			this.btnSave.UseVisualStyleBackColor = false;
-			this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
-			// 
-			// btnOpen
-			// 
-			this.btnOpen.BackColor = System.Drawing.Color.HotPink;
-			this.btnOpen.Image = global::Project_CS3.Properties.Resources.drag_and_drop;
-			this.btnOpen.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.btnOpen.Location = new System.Drawing.Point(301, 683);
-			this.btnOpen.Name = "btnOpen";
-			this.btnOpen.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-			this.btnOpen.Size = new System.Drawing.Size(167, 60);
-			this.btnOpen.TabIndex = 20;
-			this.btnOpen.Text = "Open";
-			this.btnOpen.UseVisualStyleBackColor = false;
-			this.btnOpen.Click += new System.EventHandler(this.btnOpen_Click);
 			// 
 			// label12
 			// 
@@ -244,17 +138,6 @@
 			this.panelBimary.Size = new System.Drawing.Size(141, 559);
 			this.panelBimary.TabIndex = 109;
 			// 
-			// label1
-			// 
-			this.label1.AutoSize = true;
-			this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-			this.label1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label1.Location = new System.Drawing.Point(15, 430);
-			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(54, 22);
-			this.label1.TabIndex = 107;
-			this.label1.Text = "Mean";
-			// 
 			// label2
 			// 
 			this.label2.AutoSize = true;
@@ -266,12 +149,146 @@
 			this.label2.TabIndex = 106;
 			this.label2.Text = "Binary Invert";
 			// 
+			// pictureBox15
+			// 
+			this.pictureBox15.Image = global::Project_CS3.Properties.Resources.picB1;
+			this.pictureBox15.Location = new System.Drawing.Point(11, 36);
+			this.pictureBox15.Name = "pictureBox15";
+			this.pictureBox15.Size = new System.Drawing.Size(94, 55);
+			this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+			this.pictureBox15.TabIndex = 99;
+			this.pictureBox15.TabStop = false;
+			this.pictureBox15.Click += new System.EventHandler(this.pictureBox15_Click);
+			// 
+			// label1
+			// 
+			this.label1.AutoSize = true;
+			this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+			this.label1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label1.Location = new System.Drawing.Point(15, 430);
+			this.label1.Name = "label1";
+			this.label1.Size = new System.Drawing.Size(54, 22);
+			this.label1.TabIndex = 107;
+			this.label1.Text = "Mean";
+			// 
+			// pictureBox1
+			// 
+			this.pictureBox1.Image = global::Project_CS3.Properties.Resources.picB2;
+			this.pictureBox1.Location = new System.Drawing.Point(11, 139);
+			this.pictureBox1.Name = "pictureBox1";
+			this.pictureBox1.Size = new System.Drawing.Size(94, 55);
+			this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+			this.pictureBox1.TabIndex = 99;
+			this.pictureBox1.TabStop = false;
+			this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+			// 
+			// pictureBox2
+			// 
+			this.pictureBox2.Image = global::Project_CS3.Properties.Resources.picB3;
+			this.pictureBox2.Location = new System.Drawing.Point(15, 244);
+			this.pictureBox2.Name = "pictureBox2";
+			this.pictureBox2.Size = new System.Drawing.Size(94, 55);
+			this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+			this.pictureBox2.TabIndex = 99;
+			this.pictureBox2.TabStop = false;
+			this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+			// 
+			// pictureBox3
+			// 
+			this.pictureBox3.Image = global::Project_CS3.Properties.Resources.picB4;
+			this.pictureBox3.Location = new System.Drawing.Point(15, 358);
+			this.pictureBox3.Name = "pictureBox3";
+			this.pictureBox3.Size = new System.Drawing.Size(94, 55);
+			this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+			this.pictureBox3.TabIndex = 99;
+			this.pictureBox3.TabStop = false;
+			this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
+			// 
+			// pictureBox4
+			// 
+			this.pictureBox4.Image = global::Project_CS3.Properties.Resources.picB5;
+			this.pictureBox4.Location = new System.Drawing.Point(16, 472);
+			this.pictureBox4.Name = "pictureBox4";
+			this.pictureBox4.Size = new System.Drawing.Size(94, 55);
+			this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+			this.pictureBox4.TabIndex = 99;
+			this.pictureBox4.TabStop = false;
+			this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
+			// 
+			// btnsubBinary
+			// 
+			this.btnsubBinary.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+			this.btnsubBinary.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnsubBinary.Image = global::Project_CS3.Properties.Resources.file__1_1;
+			this.btnsubBinary.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.btnsubBinary.Location = new System.Drawing.Point(1260, 23);
+			this.btnsubBinary.Name = "btnsubBinary";
+			this.btnsubBinary.Size = new System.Drawing.Size(130, 46);
+			this.btnsubBinary.TabIndex = 110;
+			this.btnsubBinary.Text = "Binary";
+			this.btnsubBinary.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+			this.btnsubBinary.UseVisualStyleBackColor = false;
+			this.btnsubBinary.Click += new System.EventHandler(this.btnsubBinary_Click);
+			// 
+			// imgGray
+			// 
+			this.imgGray.Location = new System.Drawing.Point(1543, 628);
+			this.imgGray.Name = "imgGray";
+			this.imgGray.Size = new System.Drawing.Size(10, 10);
+			this.imgGray.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+			this.imgGray.TabIndex = 15;
+			this.imgGray.TabStop = false;
+			this.imgGray.Visible = false;
+			// 
+			// btnClose
+			// 
+			this.btnClose.BackColor = System.Drawing.Color.HotPink;
+			this.btnClose.Image = global::Project_CS3.Properties.Resources.door_open__1_;
+			this.btnClose.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.btnClose.Location = new System.Drawing.Point(760, 683);
+			this.btnClose.Name = "btnClose";
+			this.btnClose.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+			this.btnClose.Size = new System.Drawing.Size(167, 60);
+			this.btnClose.TabIndex = 20;
+			this.btnClose.Text = "Exit";
+			this.btnClose.UseVisualStyleBackColor = false;
+			this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+			// 
+			// btnSave
+			// 
+			this.btnSave.BackColor = System.Drawing.Color.HotPink;
+			this.btnSave.Image = global::Project_CS3.Properties.Resources.save_to_drive;
+			this.btnSave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.btnSave.Location = new System.Drawing.Point(528, 683);
+			this.btnSave.Name = "btnSave";
+			this.btnSave.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+			this.btnSave.Size = new System.Drawing.Size(167, 60);
+			this.btnSave.TabIndex = 20;
+			this.btnSave.Text = "Save";
+			this.btnSave.UseVisualStyleBackColor = false;
+			this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+			// 
+			// btnOpen
+			// 
+			this.btnOpen.BackColor = System.Drawing.Color.HotPink;
+			this.btnOpen.Image = global::Project_CS3.Properties.Resources.drag_and_drop;
+			this.btnOpen.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.btnOpen.Location = new System.Drawing.Point(301, 683);
+			this.btnOpen.Name = "btnOpen";
+			this.btnOpen.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+			this.btnOpen.Size = new System.Drawing.Size(167, 60);
+			this.btnOpen.TabIndex = 20;
+			this.btnOpen.Text = "Open";
+			this.btnOpen.UseVisualStyleBackColor = false;
+			this.btnOpen.Click += new System.EventHandler(this.btnOpen_Click);
+			// 
 			// BinaryModule
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.Yellow;
 			this.ClientSize = new System.Drawing.Size(1532, 777);
+			this.Controls.Add(this.btnsubBinary);
 			this.Controls.Add(this.panelBimary);
 			this.Controls.Add(this.imgGray);
 			this.Controls.Add(this.btnClose);
@@ -284,14 +301,14 @@
 			this.panel1.ResumeLayout(false);
 			((System.ComponentModel.ISupportInitialize)(this.imgInput)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.imgBinary)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.imgGray)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
 			this.panelBimary.ResumeLayout(false);
 			this.panelBimary.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.imgGray)).EndInit();
 			this.ResumeLayout(false);
 
 		}
@@ -315,5 +332,6 @@
 		private System.Windows.Forms.Panel panelBimary;
 		private System.Windows.Forms.Label label2;
 		private System.Windows.Forms.Label label1;
+		private System.Windows.Forms.Button btnsubBinary;
 	}
 }
