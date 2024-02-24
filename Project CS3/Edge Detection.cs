@@ -17,37 +17,86 @@ namespace Project_CS3
 		public Edge_Detection()
 		{
 			InitializeComponent();
+			customizeDesing();
 		}
 		Image<Bgr, byte> inputImage;
 		Image<Gray, byte> outputImage;
 		Image<Gray, float> sobelImage, laplacianImage;
 
+		private Form activeForm = null;
+		public void openChildForm(Form childForm)
+		{
+			if (activeForm != null)
+				activeForm.Close();
+			activeForm = childForm;
+			childForm.TopLevel = false;
+			childForm.FormBorderStyle = FormBorderStyle.None;
+			childForm.Dock = DockStyle.Fill;
+			panelSubEdDtion.Controls.Add(childForm);
+			panelSubEdDtion.Tag = childForm;
+			childForm.BringToFront();
+			childForm.Show();
+		}
+
+		/* panelSlide*/
+		private void customizeDesing()
+		{
+			panelSubEdDtion.Visible = false;
+		}
+
+		/* hideSubmenu*/
+		private void hideSubmenu()
+		{
+			if (panelSubEdDtion.Visible == true)
+				panelSubEdDtion.Visible = false;
+
+		}
+
+		/*showSubmenu*/
+		private void showSubmenu(Panel submenu)
+		{
+			if (submenu.Visible == false)
+			{
+				hideSubmenu();
+				submenu.Visible = true;
+			}
+			else
+				submenu.Visible = false;
+
+		}
 
 		private void pictureBox15_Click(object sender, EventArgs e)
 		{
-			if (inputImage != null)
+			if (inputImage == null)
 			{
+				MessageBox.Show("Please load an image first.");
+				return; // Exit the method if oriImage is null
+			}
+		
 				outputImage = inputImage.Convert<Gray, byte>().Canny(150, 10);
 				imgOutput.Image = outputImage;
-			}
 		}
 
 		private void pictureBox1_Click(object sender, EventArgs e)
 		{
-			if (inputImage != null)
+			if (inputImage == null)
 			{
-				sobelImage = inputImage.Convert<Gray, float>().Sobel(1, 1, 5);
-				imgOutput.Image = sobelImage;
+				MessageBox.Show("Please load an image first.");
+				return; // Exit the method if oriImage is null
 			}
+			sobelImage = inputImage.Convert<Gray, float>().Sobel(1, 1, 5);
+				imgOutput.Image = sobelImage;
 		}
 
 		private void pictureBox2_Click(object sender, EventArgs e)
 		{
-			if (inputImage != null)
+			if (inputImage == null)
 			{
-				laplacianImage = inputImage.Convert<Gray, float>().Laplace(5);
-				imgOutput.Image = laplacianImage;
+				MessageBox.Show("Please load an image first.");
+				return; // Exit the method if oriImage is null
 			}
+			laplacianImage = inputImage.Convert<Gray, float>().Laplace(5);
+				imgOutput.Image = laplacianImage;
 		}
 
 		private void btnOpen_Click(object sender, EventArgs e)
@@ -78,6 +127,11 @@ namespace Project_CS3
 		private void btnClose_Click(object sender, EventArgs e)
 		{
 			this.Close();
+		}
+
+		private void btnsubBinary_Click(object sender, EventArgs e)
+		{
+			showSubmenu(panelSubEdDtion);
 		}
 
 		private void openToolStripMenuItem_Click(object sender, EventArgs e)

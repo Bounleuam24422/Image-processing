@@ -40,29 +40,29 @@
 			this.label1 = new System.Windows.Forms.Label();
 			this.htgGray = new Emgu.CV.UI.HistogramBox();
 			this.panel1 = new System.Windows.Forms.Panel();
-			this.imgBoxInput = new Emgu.CV.UI.ImageBox();
-			this.imgBoxGray = new Emgu.CV.UI.ImageBox();
-			this.ImgBoxOutput = new Emgu.CV.UI.ImageBox();
 			this.label6 = new System.Windows.Forms.Label();
 			this.label5 = new System.Windows.Forms.Label();
 			this.label4 = new System.Windows.Forms.Label();
 			this.panelSubHisgram = new System.Windows.Forms.Panel();
-			this.pictureBox15 = new System.Windows.Forms.PictureBox();
-			this.pictureBox3 = new System.Windows.Forms.PictureBox();
-			this.pictureBox4 = new System.Windows.Forms.PictureBox();
+			this.btnsubBinary = new System.Windows.Forms.Button();
 			this.btnClose = new System.Windows.Forms.Button();
 			this.btnSave = new System.Windows.Forms.Button();
 			this.btnOpen = new System.Windows.Forms.Button();
-			this.btnsubBinary = new System.Windows.Forms.Button();
+			this.pictureBox15 = new System.Windows.Forms.PictureBox();
+			this.pictureBox3 = new System.Windows.Forms.PictureBox();
+			this.pictureBox4 = new System.Windows.Forms.PictureBox();
+			this.imgBoxInput = new Emgu.CV.UI.ImageBox();
+			this.imgBoxGray = new Emgu.CV.UI.ImageBox();
+			this.ImgBoxOutput = new Emgu.CV.UI.ImageBox();
 			this.groupBox1.SuspendLayout();
 			this.panel1.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.imgBoxInput)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.imgBoxGray)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.ImgBoxOutput)).BeginInit();
 			this.panelSubHisgram.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.imgBoxInput)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.imgBoxGray)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.ImgBoxOutput)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// groupBox1
@@ -152,7 +152,7 @@
 			// label1
 			// 
 			this.label1.AutoSize = true;
-			this.label1.Location = new System.Drawing.Point(962, 541);
+			this.label1.Location = new System.Drawing.Point(962, 520);
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(46, 17);
 			this.label1.TabIndex = 59;
@@ -175,37 +175,10 @@
 			this.panel1.Controls.Add(this.ImgBoxOutput);
 			this.panel1.Controls.Add(this.htgBeforeE);
 			this.panel1.Controls.Add(this.htgGray);
-			this.panel1.Location = new System.Drawing.Point(26, 116);
+			this.panel1.Location = new System.Drawing.Point(26, 95);
 			this.panel1.Name = "panel1";
 			this.panel1.Size = new System.Drawing.Size(1471, 667);
 			this.panel1.TabIndex = 62;
-			// 
-			// imgBoxInput
-			// 
-			this.imgBoxInput.Location = new System.Drawing.Point(6, 5);
-			this.imgBoxInput.Name = "imgBoxInput";
-			this.imgBoxInput.Size = new System.Drawing.Size(483, 346);
-			this.imgBoxInput.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-			this.imgBoxInput.TabIndex = 47;
-			this.imgBoxInput.TabStop = false;
-			// 
-			// imgBoxGray
-			// 
-			this.imgBoxGray.Location = new System.Drawing.Point(494, 5);
-			this.imgBoxGray.Name = "imgBoxGray";
-			this.imgBoxGray.Size = new System.Drawing.Size(483, 346);
-			this.imgBoxGray.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-			this.imgBoxGray.TabIndex = 57;
-			this.imgBoxGray.TabStop = false;
-			// 
-			// ImgBoxOutput
-			// 
-			this.ImgBoxOutput.Location = new System.Drawing.Point(982, 5);
-			this.ImgBoxOutput.Name = "ImgBoxOutput";
-			this.ImgBoxOutput.Size = new System.Drawing.Size(483, 346);
-			this.ImgBoxOutput.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-			this.ImgBoxOutput.TabIndex = 50;
-			this.ImgBoxOutput.TabStop = false;
 			// 
 			// label6
 			// 
@@ -249,10 +222,67 @@
 			this.panelSubHisgram.Controls.Add(this.label5);
 			this.panelSubHisgram.Controls.Add(this.label4);
 			this.panelSubHisgram.Controls.Add(this.groupBox1);
-			this.panelSubHisgram.Location = new System.Drawing.Point(1505, 116);
+			this.panelSubHisgram.Location = new System.Drawing.Point(1505, 95);
 			this.panelSubHisgram.Name = "panelSubHisgram";
 			this.panelSubHisgram.Size = new System.Drawing.Size(263, 550);
 			this.panelSubHisgram.TabIndex = 105;
+			// 
+			// btnsubBinary
+			// 
+			this.btnsubBinary.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+			this.btnsubBinary.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnsubBinary.Image = global::Project_CS3.Properties.Resources.chart_curve;
+			this.btnsubBinary.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.btnsubBinary.Location = new System.Drawing.Point(1534, 23);
+			this.btnsubBinary.Name = "btnsubBinary";
+			this.btnsubBinary.Size = new System.Drawing.Size(172, 53);
+			this.btnsubBinary.TabIndex = 111;
+			this.btnsubBinary.Text = "Histogram";
+			this.btnsubBinary.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+			this.btnsubBinary.UseVisualStyleBackColor = false;
+			this.btnsubBinary.Click += new System.EventHandler(this.btnsubBinary_Click);
+			// 
+			// btnClose
+			// 
+			this.btnClose.BackColor = System.Drawing.Color.HotPink;
+			this.btnClose.Image = global::Project_CS3.Properties.Resources.door_open__1_;
+			this.btnClose.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.btnClose.Location = new System.Drawing.Point(817, 813);
+			this.btnClose.Name = "btnClose";
+			this.btnClose.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+			this.btnClose.Size = new System.Drawing.Size(167, 60);
+			this.btnClose.TabIndex = 106;
+			this.btnClose.Text = "Exit";
+			this.btnClose.UseVisualStyleBackColor = false;
+			this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+			// 
+			// btnSave
+			// 
+			this.btnSave.BackColor = System.Drawing.Color.HotPink;
+			this.btnSave.Image = global::Project_CS3.Properties.Resources.save_to_drive;
+			this.btnSave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.btnSave.Location = new System.Drawing.Point(585, 813);
+			this.btnSave.Name = "btnSave";
+			this.btnSave.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+			this.btnSave.Size = new System.Drawing.Size(167, 60);
+			this.btnSave.TabIndex = 107;
+			this.btnSave.Text = "Save";
+			this.btnSave.UseVisualStyleBackColor = false;
+			this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+			// 
+			// btnOpen
+			// 
+			this.btnOpen.BackColor = System.Drawing.Color.HotPink;
+			this.btnOpen.Image = global::Project_CS3.Properties.Resources.drag_and_drop;
+			this.btnOpen.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.btnOpen.Location = new System.Drawing.Point(358, 813);
+			this.btnOpen.Name = "btnOpen";
+			this.btnOpen.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+			this.btnOpen.Size = new System.Drawing.Size(167, 60);
+			this.btnOpen.TabIndex = 108;
+			this.btnOpen.Text = "Open";
+			this.btnOpen.UseVisualStyleBackColor = false;
+			this.btnOpen.Click += new System.EventHandler(this.btnOpen_Click);
 			// 
 			// pictureBox15
 			// 
@@ -287,62 +317,32 @@
 			this.pictureBox4.TabStop = false;
 			this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
 			// 
-			// btnClose
+			// imgBoxInput
 			// 
-			this.btnClose.BackColor = System.Drawing.Color.HotPink;
-			this.btnClose.Image = global::Project_CS3.Properties.Resources.door_open__1_;
-			this.btnClose.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.btnClose.Location = new System.Drawing.Point(817, 834);
-			this.btnClose.Name = "btnClose";
-			this.btnClose.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-			this.btnClose.Size = new System.Drawing.Size(167, 60);
-			this.btnClose.TabIndex = 106;
-			this.btnClose.Text = "Exit";
-			this.btnClose.UseVisualStyleBackColor = false;
-			this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+			this.imgBoxInput.Location = new System.Drawing.Point(6, 5);
+			this.imgBoxInput.Name = "imgBoxInput";
+			this.imgBoxInput.Size = new System.Drawing.Size(483, 346);
+			this.imgBoxInput.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+			this.imgBoxInput.TabIndex = 47;
+			this.imgBoxInput.TabStop = false;
 			// 
-			// btnSave
+			// imgBoxGray
 			// 
-			this.btnSave.BackColor = System.Drawing.Color.HotPink;
-			this.btnSave.Image = global::Project_CS3.Properties.Resources.save_to_drive;
-			this.btnSave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.btnSave.Location = new System.Drawing.Point(585, 834);
-			this.btnSave.Name = "btnSave";
-			this.btnSave.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-			this.btnSave.Size = new System.Drawing.Size(167, 60);
-			this.btnSave.TabIndex = 107;
-			this.btnSave.Text = "Save";
-			this.btnSave.UseVisualStyleBackColor = false;
-			this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+			this.imgBoxGray.Location = new System.Drawing.Point(494, 5);
+			this.imgBoxGray.Name = "imgBoxGray";
+			this.imgBoxGray.Size = new System.Drawing.Size(483, 346);
+			this.imgBoxGray.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+			this.imgBoxGray.TabIndex = 57;
+			this.imgBoxGray.TabStop = false;
 			// 
-			// btnOpen
+			// ImgBoxOutput
 			// 
-			this.btnOpen.BackColor = System.Drawing.Color.HotPink;
-			this.btnOpen.Image = global::Project_CS3.Properties.Resources.drag_and_drop;
-			this.btnOpen.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.btnOpen.Location = new System.Drawing.Point(358, 834);
-			this.btnOpen.Name = "btnOpen";
-			this.btnOpen.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-			this.btnOpen.Size = new System.Drawing.Size(167, 60);
-			this.btnOpen.TabIndex = 108;
-			this.btnOpen.Text = "Open";
-			this.btnOpen.UseVisualStyleBackColor = false;
-			this.btnOpen.Click += new System.EventHandler(this.btnOpen_Click);
-			// 
-			// btnsubBinary
-			// 
-			this.btnsubBinary.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-			this.btnsubBinary.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btnsubBinary.Image = global::Project_CS3.Properties.Resources.chart_curve;
-			this.btnsubBinary.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.btnsubBinary.Location = new System.Drawing.Point(1534, 44);
-			this.btnsubBinary.Name = "btnsubBinary";
-			this.btnsubBinary.Size = new System.Drawing.Size(172, 53);
-			this.btnsubBinary.TabIndex = 111;
-			this.btnsubBinary.Text = "Histogram";
-			this.btnsubBinary.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.btnsubBinary.UseVisualStyleBackColor = false;
-			this.btnsubBinary.Click += new System.EventHandler(this.btnsubBinary_Click);
+			this.ImgBoxOutput.Location = new System.Drawing.Point(982, 5);
+			this.ImgBoxOutput.Name = "ImgBoxOutput";
+			this.ImgBoxOutput.Size = new System.Drawing.Size(483, 346);
+			this.ImgBoxOutput.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+			this.ImgBoxOutput.TabIndex = 50;
+			this.ImgBoxOutput.TabStop = false;
 			// 
 			// Histogram_Equalization
 			// 
@@ -363,14 +363,14 @@
 			this.groupBox1.ResumeLayout(false);
 			this.groupBox1.PerformLayout();
 			this.panel1.ResumeLayout(false);
-			((System.ComponentModel.ISupportInitialize)(this.imgBoxInput)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.imgBoxGray)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.ImgBoxOutput)).EndInit();
 			this.panelSubHisgram.ResumeLayout(false);
 			this.panelSubHisgram.PerformLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.imgBoxInput)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.imgBoxGray)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.ImgBoxOutput)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 

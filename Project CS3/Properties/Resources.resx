@@ -127,8 +127,8 @@
   <data name="dropbox (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\dropbox (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="picB5" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\picB5.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="picHB3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\picHB3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="door-open (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\door-open (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -157,6 +157,9 @@
   <data name="file (1)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\file (1)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="picE3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\picE3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="picf6" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\picf6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -172,6 +175,9 @@
   <data name="picf5" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\picf5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="picB5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\picB5.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="file (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\file (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -184,8 +190,14 @@
   <data name="pic7" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pic7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="edge_detection" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edge_detection.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="PicMC4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\PicMC4.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="picf12" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\picf12.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="picf13" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\picf13.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -244,8 +256,8 @@
   <data name="picB4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\picB4.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="picf12" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\picf12.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="picE2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\picE2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="picM6" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\picM6.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -259,7 +271,7 @@
   <data name="chart_curve" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\chart_curve.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="picHB3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\picHB3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="picE4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\picE4.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

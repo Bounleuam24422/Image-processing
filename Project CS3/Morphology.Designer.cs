@@ -31,6 +31,8 @@
 			this.components = new System.ComponentModel.Container();
 			this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
 			this.panel1 = new System.Windows.Forms.Panel();
+			this.pictureBoxInput = new System.Windows.Forms.PictureBox();
+			this.pictureBoxOutput = new System.Windows.Forms.PictureBox();
 			this.label7 = new System.Windows.Forms.Label();
 			this.label9 = new System.Windows.Forms.Label();
 			this.label8 = new System.Windows.Forms.Label();
@@ -57,11 +59,11 @@
 			this.btnClose = new System.Windows.Forms.Button();
 			this.btnSave = new System.Windows.Forms.Button();
 			this.btnOpen = new System.Windows.Forms.Button();
-			this.pictureBoxInput = new System.Windows.Forms.PictureBox();
-			this.pictureBoxOutput = new System.Windows.Forms.PictureBox();
 			this.panelSubMorGy = new System.Windows.Forms.Panel();
 			this.panelSubMorCal = new System.Windows.Forms.Panel();
 			this.panel1.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBoxInput)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBoxOutput)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
@@ -72,8 +74,6 @@
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBoxInput)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBoxOutput)).BeginInit();
 			this.panelSubMorGy.SuspendLayout();
 			this.panelSubMorCal.SuspendLayout();
 			this.SuspendLayout();
@@ -89,10 +89,28 @@
 			this.panel1.BackColor = System.Drawing.Color.Teal;
 			this.panel1.Controls.Add(this.pictureBoxInput);
 			this.panel1.Controls.Add(this.pictureBoxOutput);
-			this.panel1.Location = new System.Drawing.Point(68, 93);
+			this.panel1.Location = new System.Drawing.Point(70, 82);
 			this.panel1.Name = "panel1";
 			this.panel1.Size = new System.Drawing.Size(1117, 575);
 			this.panel1.TabIndex = 9;
+			// 
+			// pictureBoxInput
+			// 
+			this.pictureBoxInput.Location = new System.Drawing.Point(5, 6);
+			this.pictureBoxInput.Name = "pictureBoxInput";
+			this.pictureBoxInput.Size = new System.Drawing.Size(537, 559);
+			this.pictureBoxInput.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+			this.pictureBoxInput.TabIndex = 7;
+			this.pictureBoxInput.TabStop = false;
+			// 
+			// pictureBoxOutput
+			// 
+			this.pictureBoxOutput.Location = new System.Drawing.Point(548, 7);
+			this.pictureBoxOutput.Name = "pictureBoxOutput";
+			this.pictureBoxOutput.Size = new System.Drawing.Size(562, 558);
+			this.pictureBoxOutput.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+			this.pictureBoxOutput.TabIndex = 8;
+			this.pictureBoxOutput.TabStop = false;
 			// 
 			// label7
 			// 
@@ -198,7 +216,7 @@
 			this.label10.AutoSize = true;
 			this.label10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
 			this.label10.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label10.Location = new System.Drawing.Point(1308, 482);
+			this.label10.Location = new System.Drawing.Point(1310, 471);
 			this.label10.Name = "label10";
 			this.label10.Size = new System.Drawing.Size(0, 22);
 			this.label10.TabIndex = 110;
@@ -220,7 +238,7 @@
 			this.button4.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.button4.Image = global::Project_CS3.Properties.Resources.document_shapes;
 			this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.button4.Location = new System.Drawing.Point(1506, 32);
+			this.button4.Location = new System.Drawing.Point(1508, 21);
 			this.button4.Name = "button4";
 			this.button4.Size = new System.Drawing.Size(208, 54);
 			this.button4.TabIndex = 106;
@@ -235,7 +253,7 @@
 			this.button3.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.button3.Image = global::Project_CS3.Properties.Resources.document_shapes;
 			this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.button3.Location = new System.Drawing.Point(1229, 32);
+			this.button3.Location = new System.Drawing.Point(1231, 21);
 			this.button3.Name = "button3";
 			this.button3.Size = new System.Drawing.Size(208, 54);
 			this.button3.TabIndex = 106;
@@ -359,7 +377,7 @@
 			this.btnClose.BackColor = System.Drawing.Color.HotPink;
 			this.btnClose.Image = global::Project_CS3.Properties.Resources.door_open__1_;
 			this.btnClose.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.btnClose.Location = new System.Drawing.Point(752, 733);
+			this.btnClose.Location = new System.Drawing.Point(754, 722);
 			this.btnClose.Name = "btnClose";
 			this.btnClose.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
 			this.btnClose.Size = new System.Drawing.Size(167, 60);
@@ -373,7 +391,7 @@
 			this.btnSave.BackColor = System.Drawing.Color.HotPink;
 			this.btnSave.Image = global::Project_CS3.Properties.Resources.save_to_drive;
 			this.btnSave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.btnSave.Location = new System.Drawing.Point(520, 733);
+			this.btnSave.Location = new System.Drawing.Point(522, 722);
 			this.btnSave.Name = "btnSave";
 			this.btnSave.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
 			this.btnSave.Size = new System.Drawing.Size(167, 60);
@@ -387,7 +405,7 @@
 			this.btnOpen.BackColor = System.Drawing.Color.HotPink;
 			this.btnOpen.Image = global::Project_CS3.Properties.Resources.drag_and_drop;
 			this.btnOpen.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.btnOpen.Location = new System.Drawing.Point(293, 733);
+			this.btnOpen.Location = new System.Drawing.Point(295, 722);
 			this.btnOpen.Name = "btnOpen";
 			this.btnOpen.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
 			this.btnOpen.Size = new System.Drawing.Size(167, 60);
@@ -395,24 +413,6 @@
 			this.btnOpen.Text = "Open";
 			this.btnOpen.UseVisualStyleBackColor = false;
 			this.btnOpen.Click += new System.EventHandler(this.btnOpen_Click);
-			// 
-			// pictureBoxInput
-			// 
-			this.pictureBoxInput.Location = new System.Drawing.Point(5, 6);
-			this.pictureBoxInput.Name = "pictureBoxInput";
-			this.pictureBoxInput.Size = new System.Drawing.Size(537, 559);
-			this.pictureBoxInput.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-			this.pictureBoxInput.TabIndex = 7;
-			this.pictureBoxInput.TabStop = false;
-			// 
-			// pictureBoxOutput
-			// 
-			this.pictureBoxOutput.Location = new System.Drawing.Point(548, 7);
-			this.pictureBoxOutput.Name = "pictureBoxOutput";
-			this.pictureBoxOutput.Size = new System.Drawing.Size(562, 558);
-			this.pictureBoxOutput.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-			this.pictureBoxOutput.TabIndex = 8;
-			this.pictureBoxOutput.TabStop = false;
 			// 
 			// panelSubMorGy
 			// 
@@ -428,7 +428,7 @@
 			this.panelSubMorGy.Controls.Add(this.label4);
 			this.panelSubMorGy.Controls.Add(this.label6);
 			this.panelSubMorGy.Controls.Add(this.label5);
-			this.panelSubMorGy.Location = new System.Drawing.Point(1203, 93);
+			this.panelSubMorGy.Location = new System.Drawing.Point(1205, 82);
 			this.panelSubMorGy.Name = "panelSubMorGy";
 			this.panelSubMorGy.Size = new System.Drawing.Size(255, 325);
 			this.panelSubMorGy.TabIndex = 113;
@@ -443,7 +443,7 @@
 			this.panelSubMorCal.Controls.Add(this.label1);
 			this.panelSubMorCal.Controls.Add(this.label2);
 			this.panelSubMorCal.Controls.Add(this.label3);
-			this.panelSubMorCal.Location = new System.Drawing.Point(1489, 93);
+			this.panelSubMorCal.Location = new System.Drawing.Point(1491, 82);
 			this.panelSubMorCal.Name = "panelSubMorCal";
 			this.panelSubMorCal.Size = new System.Drawing.Size(250, 325);
 			this.panelSubMorCal.TabIndex = 114;
@@ -467,6 +467,8 @@
 			this.Name = "Morphology";
 			this.Text = "Morphology";
 			this.panel1.ResumeLayout(false);
+			((System.ComponentModel.ISupportInitialize)(this.pictureBoxInput)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBoxOutput)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
@@ -477,8 +479,6 @@
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBoxInput)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBoxOutput)).EndInit();
 			this.panelSubMorGy.ResumeLayout(false);
 			this.panelSubMorGy.PerformLayout();
 			this.panelSubMorCal.ResumeLayout(false);

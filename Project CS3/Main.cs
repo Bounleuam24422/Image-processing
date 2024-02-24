@@ -131,5 +131,10 @@ namespace Project_CS3
 		{
 			openChildForm(new Histogram_Equalization());
 		}
+
+		private void btnEdDtion_Click_1(object sender, EventArgs e)
+		{
+			openChildForm(new Edge_Detection());
+		}
 	}
 }
