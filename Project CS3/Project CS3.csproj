@@ -85,12 +85,6 @@
     <Compile Include="Filters.Designer.cs">
       <DependentUpon>Filters.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
     <Compile Include="Histogram Equalization.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -128,9 +122,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Filters.resx">
       <DependentUpon>Filters.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Histogram Equalization.resx">
       <DependentUpon>Histogram Equalization.cs</DependentUpon>

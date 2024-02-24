@@ -331,9 +331,11 @@
 			this.Controls.Add(this.panel3);
 			this.Controls.Add(this.panelSideMenu);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.Name = "Main";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Main";
+			this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
 			this.Load += new System.EventHandler(this.Main_Load);
 			this.panelSideMenu.ResumeLayout(false);
 			this.panalFilter_Type.ResumeLayout(false);
