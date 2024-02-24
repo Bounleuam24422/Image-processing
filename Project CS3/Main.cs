@@ -109,7 +109,7 @@ namespace Project_CS3
 
 		private void btnFilter_Click_2(object sender, EventArgs e)
 		{
-			
+			openChildForm(new FiltersModule());
 		}
 
 		private void btnbinary_Click_1(object sender, EventArgs e)

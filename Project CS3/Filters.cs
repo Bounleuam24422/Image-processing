@@ -12,15 +12,17 @@ using System.IO;
 using AForge.Imaging.Filters;
 using System.Drawing.Drawing2D;
 using AForge.Imaging;
+using Emgu.CV;
 
 
 namespace Project_CS3
 {
-	public partial class Filters : Form
+	public partial class FiltersModule : Form
 	{
-		public Filters()
+		public FiltersModule()
 		{
 			InitializeComponent();
+			customizeDesing();
 		}
 		System.Drawing.Image file;
 		Boolean opened = false;
@@ -698,6 +700,11 @@ namespace Project_CS3
 		}
 		void smooth()
 		{
+			if (pictureBox2.Image == null)
+			{
+				MessageBox.Show("Please open an image first");
+				return; // Exit the method if pictureBox2 is empty
+			}
 
 			System.Drawing.Bitmap image = (Bitmap)pictureBox2.Image;
 			AForge.Imaging.Filters.ConservativeSmoothing filter = new AForge.Imaging.Filters.ConservativeSmoothing();
@@ -708,6 +715,11 @@ namespace Project_CS3
 
 		void sepia1()
 		{
+			if (pictureBox2.Image == null)
+			{
+				MessageBox.Show("Please open an image first");
+				return; // Exit the method if pictureBox2 is empty
+			}
 
 			System.Drawing.Bitmap image = (Bitmap)pictureBox2.Image;
 			AForge.Imaging.Filters.Sepia filter = new AForge.Imaging.Filters.Sepia();
@@ -718,15 +730,26 @@ namespace Project_CS3
 		void GaussianSharp()
 		{
 
+			if (pictureBox2.Image == null)
+			{
+				MessageBox.Show("Please open an image first");
+				return; // Exit the method if pictureBox2 is empty
+			}
+
 			System.Drawing.Bitmap image = (Bitmap)pictureBox2.Image;
 			AForge.Imaging.Filters.GaussianSharpen filter = new AForge.Imaging.Filters.GaussianSharpen();
 			pictureBox2.Image = filter.Apply(image);
-			
+
 
 		}
 
 		void WaterWavef()
 		{
+			if (pictureBox2.Image == null)
+			{
+				MessageBox.Show("Please open an image first");
+				return; // Exit the method if pictureBox2 is empty
+			}
 
 			System.Drawing.Bitmap image = (Bitmap)pictureBox2.Image;
 			AForge.Imaging.Filters.WaterWave filter = new AForge.Imaging.Filters.WaterWave();
@@ -741,6 +764,11 @@ namespace Project_CS3
 
 		void Sharp()
 		{
+			if (pictureBox2.Image == null)
+			{
+				MessageBox.Show("Please open an image first");
+				return; // Exit the method if pictureBox2 is empty
+			}
 
 			System.Drawing.Bitmap image = (Bitmap)pictureBox2.Image;
 			AForge.Imaging.Filters.Sharpen filter = new AForge.Imaging.Filters.Sharpen();
@@ -904,6 +932,7 @@ namespace Project_CS3
 
 		private void pictureBox15_Click(object sender, EventArgs e)
 		{
+			
 			reload();
 			sepia1();
 		}
@@ -983,6 +1012,16 @@ namespace Project_CS3
 		private void btnCrop_Click_2(object sender, EventArgs e)
 		{
 
+		}
+
+		private void button2_Click_1(object sender, EventArgs e)
+		{
+			showSubmenu(panelSubfilters);
+		}
+
+		private void btnClose_Click(object sender, EventArgs e)
+		{
+			this.Close();
 		}
 	}
 }

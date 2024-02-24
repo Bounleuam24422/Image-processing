@@ -18,13 +18,60 @@ namespace Project_CS3
 		public BinaryModule()
 		{
 			InitializeComponent();
+			customizeDesing();
 		}
 		Image<Bgr, byte> oriImage;
 		Image<Gray, byte> grayImage, binaryImage;
 
+		
+	System.Drawing.Image file;
+	Boolean opened = false;
+
+	private Form activeForm = null;
+	public void openChildForm(Form childForm)
+	{
+		if (activeForm != null)
+			activeForm.Close();
+		activeForm = childForm;
+		childForm.TopLevel = false;
+		childForm.FormBorderStyle = FormBorderStyle.None;
+		childForm.Dock = DockStyle.Fill;
+        panelBimary.Controls.Add(childForm);
+		panelBimary.Tag = childForm;
+		childForm.BringToFront();
+		childForm.Show();
+	}
+
+	/* panelSlide*/
+	private void customizeDesing()
+	{
+	  panelBimary.Visible = false;
+	}
+
+	/* hideSubmenu*/
+	private void hideSubmenu()
+	{
+		if (panelBimary.Visible == true)
+		    panelBimary.Visible = false;
+
+	}
+
+	/*showSubmenu*/
+	private void showSubmenu(Panel submenu)
+	{
+		if (submenu.Visible == false)
+		{
+			hideSubmenu();
+			submenu.Visible = true;
+		}
+		else
+			submenu.Visible = false;
+
+	}
 
 
-		private void btnClose_Click(object sender, EventArgs e)
+
+	private void btnClose_Click(object sender, EventArgs e)
 		{
 			this.Close();
 		}
@@ -83,7 +130,8 @@ namespace Project_CS3
 			}
 		}
 
-		private void btnBinary_Click(object sender, EventArgs e)
+
+		private void pictureBox15_Click(object sender, EventArgs e)
 		{
 			if (oriImage == null)
 			{
@@ -94,7 +142,7 @@ namespace Project_CS3
 			imgBinary.Image = binaryImage;
 		}
 
-		private void btnBiny_Inver_Click(object sender, EventArgs e)
+		private void pictureBox1_Click(object sender, EventArgs e)
 		{
 			if (oriImage == null)
 			{
@@ -105,7 +153,7 @@ namespace Project_CS3
 			imgBinary.Image = binaryImage;
 		}
 
-		private void btnOT_Su_Click(object sender, EventArgs e)
+		private void pictureBox2_Click(object sender, EventArgs e)
 		{
 			if (oriImage == null)
 			{
@@ -116,7 +164,7 @@ namespace Project_CS3
 			imgBinary.Image = binaryImage;
 		}
 
-		private void btnGuasian_Click(object sender, EventArgs e)
+		private void pictureBox3_Click(object sender, EventArgs e)
 		{
 			if (oriImage == null)
 			{
@@ -128,7 +176,7 @@ namespace Project_CS3
 			imgBinary.Image = binaryImage;
 		}
 
-		private void btnMean_Click(object sender, EventArgs e)
+		private void pictureBox4_Click(object sender, EventArgs e)
 		{
 			if (oriImage == null)
 			{
@@ -139,6 +187,7 @@ namespace Project_CS3
 			AdaptiveThresholdType.MeanC, ThresholdType.Binary, 9, new Gray(0));
 			imgBinary.Image = binaryImage;
 		}
+
 
 	}
 }

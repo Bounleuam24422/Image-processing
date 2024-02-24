@@ -1,6 +1,6 @@
 ﻿namespace Project_CS3
 {
-	partial class Filters
+	partial class FiltersModule
 	{
 		/// <summary>
 		/// Required designer variable.
@@ -68,6 +68,8 @@
 			this.button4 = new System.Windows.Forms.Button();
 			this.button3 = new System.Windows.Forms.Button();
 			this.pictureBox1 = new System.Windows.Forms.PictureBox();
+			this.label15 = new System.Windows.Forms.Label();
+			this.btnClose = new System.Windows.Forms.Button();
 			((System.ComponentModel.ISupportInitialize)(this.trackBar3)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.trackBar2)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
@@ -92,7 +94,7 @@
 			// 
 			this.label3.AutoSize = true;
 			this.label3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label3.Location = new System.Drawing.Point(1037, 834);
+			this.label3.Location = new System.Drawing.Point(1046, 830);
 			this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
 			this.label3.Name = "label3";
 			this.label3.Size = new System.Drawing.Size(90, 22);
@@ -104,7 +106,7 @@
 			// 
 			this.label2.AutoSize = true;
 			this.label2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label2.Location = new System.Drawing.Point(1049, 789);
+			this.label2.Location = new System.Drawing.Point(1058, 785);
 			this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
 			this.label2.Name = "label2";
 			this.label2.Size = new System.Drawing.Size(76, 22);
@@ -114,7 +116,7 @@
 			// 
 			// trackBar3
 			// 
-			this.trackBar3.Location = new System.Drawing.Point(1122, 834);
+			this.trackBar3.Location = new System.Drawing.Point(1131, 830);
 			this.trackBar3.Margin = new System.Windows.Forms.Padding(4);
 			this.trackBar3.Minimum = -10;
 			this.trackBar3.Name = "trackBar3";
@@ -125,7 +127,7 @@
 			// 
 			// trackBar2
 			// 
-			this.trackBar2.Location = new System.Drawing.Point(1122, 789);
+			this.trackBar2.Location = new System.Drawing.Point(1131, 785);
 			this.trackBar2.Margin = new System.Windows.Forms.Padding(4);
 			this.trackBar2.Minimum = -10;
 			this.trackBar2.Name = "trackBar2";
@@ -140,7 +142,7 @@
 			// 
 			// trackBar1
 			// 
-			this.trackBar1.Location = new System.Drawing.Point(1122, 744);
+			this.trackBar1.Location = new System.Drawing.Point(1131, 740);
 			this.trackBar1.Margin = new System.Windows.Forms.Padding(4);
 			this.trackBar1.Minimum = -10;
 			this.trackBar1.Name = "trackBar1";
@@ -153,7 +155,7 @@
 			// 
 			this.label1.AutoSize = true;
 			this.label1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label1.Location = new System.Drawing.Point(1036, 744);
+			this.label1.Location = new System.Drawing.Point(1045, 740);
 			this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(93, 22);
@@ -311,6 +313,7 @@
 			this.panelSubfilters.Controls.Add(this.pictureBox10);
 			this.panelSubfilters.Controls.Add(this.label7);
 			this.panelSubfilters.Controls.Add(this.pictureBox6);
+			this.panelSubfilters.Controls.Add(this.label15);
 			this.panelSubfilters.Controls.Add(this.label9);
 			this.panelSubfilters.Controls.Add(this.pictureBox11);
 			this.panelSubfilters.Controls.Add(this.label8);
@@ -321,7 +324,7 @@
 			this.panelSubfilters.Controls.Add(this.pictureBox7);
 			this.panelSubfilters.Controls.Add(this.label4);
 			this.panelSubfilters.Controls.Add(this.pictureBox13);
-			this.panelSubfilters.Location = new System.Drawing.Point(1106, 116);
+			this.panelSubfilters.Location = new System.Drawing.Point(1122, 64);
 			this.panelSubfilters.Name = "panelSubfilters";
 			this.panelSubfilters.Size = new System.Drawing.Size(388, 638);
 			this.panelSubfilters.TabIndex = 104;
@@ -332,13 +335,14 @@
 			this.button2.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.button2.Image = global::Project_CS3.Properties.Resources.filter;
 			this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.button2.Location = new System.Drawing.Point(1252, 64);
+			this.button2.Location = new System.Drawing.Point(1255, 12);
 			this.button2.Name = "button2";
 			this.button2.Size = new System.Drawing.Size(113, 46);
 			this.button2.TabIndex = 105;
 			this.button2.Text = "Filters";
 			this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
 			this.button2.UseVisualStyleBackColor = false;
+			this.button2.Click += new System.EventHandler(this.button2_Click_1);
 			// 
 			// pictureBox15
 			// 
@@ -474,7 +478,7 @@
 			// 
 			// pictureBox2
 			// 
-			this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+			this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
 			this.pictureBox2.Location = new System.Drawing.Point(73, 64);
 			this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
 			this.pictureBox2.Name = "pictureBox2";
@@ -557,11 +561,38 @@
 			this.pictureBox1.TabIndex = 29;
 			this.pictureBox1.TabStop = false;
 			// 
-			// Filters
+			// label15
+			// 
+			this.label15.AutoSize = true;
+			this.label15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+			this.label15.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label15.Location = new System.Drawing.Point(211, 516);
+			this.label15.Name = "label15";
+			this.label15.Size = new System.Drawing.Size(74, 22);
+			this.label15.TabIndex = 103;
+			this.label15.Text = "Sharpen";
+			// 
+			// btnClose
+			// 
+			this.btnClose.BackColor = System.Drawing.Color.HotPink;
+			this.btnClose.Image = global::Project_CS3.Properties.Resources.door_open__1_;
+			this.btnClose.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.btnClose.Location = new System.Drawing.Point(93, 830);
+			this.btnClose.Name = "btnClose";
+			this.btnClose.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+			this.btnClose.Size = new System.Drawing.Size(167, 60);
+			this.btnClose.TabIndex = 106;
+			this.btnClose.Text = "Exit";
+			this.btnClose.UseVisualStyleBackColor = false;
+			this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+			// 
+			// FiltersModule
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+			this.BackColor = System.Drawing.Color.Yellow;
 			this.ClientSize = new System.Drawing.Size(1747, 976);
+			this.Controls.Add(this.btnClose);
 			this.Controls.Add(this.button2);
 			this.Controls.Add(this.panelSubfilters);
 			this.Controls.Add(this.btnCrop);
@@ -577,7 +608,8 @@
 			this.Controls.Add(this.trackBar1);
 			this.Controls.Add(this.label1);
 			this.Controls.Add(this.pictureBox1);
-			this.Name = "Filters";
+			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+			this.Name = "FiltersModule";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Filters";
 			this.Load += new System.EventHandler(this.Filters_Load);
@@ -647,5 +679,7 @@
 		private System.Windows.Forms.Button btnCrop;
 		private System.Windows.Forms.Panel panelSubfilters;
 		private System.Windows.Forms.Button button2;
+		private System.Windows.Forms.Label label15;
+		private System.Windows.Forms.Button btnClose;
 	}
 }
