@@ -193,6 +193,8 @@
     <None Include="Resources\save-to-drive.png" />
     <None Include="Resources\door-open %281%29.png" />
     <None Include="Resources\chart_curve.png" />
+    <None Include="Resources\undo.png" />
+    <None Include="Resources\dropbox %281%29.png" />
     <Content Include="vcruntime140.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

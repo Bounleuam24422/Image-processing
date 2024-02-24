@@ -16,5 +16,15 @@ namespace Project_CS3
 		{
 			InitializeComponent();
 		}
+
+		private void btnbinary_Click(object sender, EventArgs e)
+		{
+
+		}
+
+		private void btnFilter_Click(object sender, EventArgs e)
+		{
+
+		}
 	}
 }

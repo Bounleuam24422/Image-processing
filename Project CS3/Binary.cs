@@ -13,9 +13,9 @@ using System.Windows.Forms;
 
 namespace Project_CS3
 {
-	public partial class Binary : Form
+	public partial class BinaryModule : Form
 	{
-		public Binary()
+		public BinaryModule()
 		{
 			InitializeComponent();
 		}
@@ -85,24 +85,44 @@ namespace Project_CS3
 
 		private void btnBinary_Click(object sender, EventArgs e)
 		{
+			if (oriImage == null)
+			{
+				MessageBox.Show("Please load an image first.");
+				return; // Exit the method if oriImage is null
+			}
 			binaryImage = grayImage.ThresholdBinary(new Gray(100), new Gray(255));
 			imgBinary.Image = binaryImage;
 		}
 
 		private void btnBiny_Inver_Click(object sender, EventArgs e)
 		{
+			if (oriImage == null)
+			{
+				MessageBox.Show("Please load an image first.");
+				return; // Exit the method if oriImage is null
+			}
 			binaryImage = grayImage.ThresholdBinaryInv(new Gray(100), new Gray(255));
 			imgBinary.Image = binaryImage;
 		}
 
 		private void btnOT_Su_Click(object sender, EventArgs e)
 		{
+			if (oriImage == null)
+			{
+				MessageBox.Show("Please load an image first.");
+				return; // Exit the method if oriImage is null
+			}
 			binaryImage = grayImage.ThresholdToZero(new Gray(100));
 			imgBinary.Image = binaryImage;
 		}
 
 		private void btnGuasian_Click(object sender, EventArgs e)
 		{
+			if (oriImage == null)
+			{
+				MessageBox.Show("Please load an image first.");
+				return; // Exit the method if oriImage is null
+			}
 			binaryImage = grayImage.ThresholdAdaptive(new Gray(256),
 			AdaptiveThresholdType.GaussianC, ThresholdType.Binary, 9, new Gray(0));
 			imgBinary.Image = binaryImage;
@@ -110,6 +130,11 @@ namespace Project_CS3
 
 		private void btnMean_Click(object sender, EventArgs e)
 		{
+			if (oriImage == null)
+			{
+				MessageBox.Show("Please load an image first.");
+				return; // Exit the method if oriImage is null
+			}
 			binaryImage = grayImage.ThresholdAdaptive(new Gray(256),
 			AdaptiveThresholdType.MeanC, ThresholdType.Binary, 9, new Gray(0));
 			imgBinary.Image = binaryImage;

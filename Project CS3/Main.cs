@@ -27,8 +27,8 @@ namespace Project_CS3
 			childForm.FormBorderStyle = FormBorderStyle.None;
 			childForm.Dock = DockStyle.Fill;
 			lblTitle.Text = childForm.Text;
-			panelfilters.Controls.Add(childForm);
-			panelfilters.Tag = childForm;
+			panelMain.Controls.Add(childForm);
+			panelMain.Tag = childForm;
 			childForm.BringToFront();
 			childForm.Show();
 		}
@@ -60,10 +60,6 @@ namespace Project_CS3
 
 		}
 
-		private void btnFter_Typ_Click(object sender, EventArgs e)
-		{
-			showSubmenu(panalFilter_Type);
-		}
 
 		private void btnFilter_Click(object sender, EventArgs e)
 		{
@@ -100,14 +96,30 @@ namespace Project_CS3
 
 		}
 
-		private void button7_Click(object sender, EventArgs e)
-		{
-
-		}
 
 		private void btnHisgm(object sender, EventArgs e)
 		{
 
+		}
+
+		private void btnClose_Click(object sender, EventArgs e)
+		{
+
+		}
+
+		private void btnFilter_Click_2(object sender, EventArgs e)
+		{
+			
+		}
+
+		private void btnbinary_Click_1(object sender, EventArgs e)
+		{
+			openChildForm(new BinaryModule());
+		}
+
+		private void btnFter_Typ_Click(object sender, EventArgs e)
+		{
+			showSubmenu(panalFilter_Type);
 		}
 	}
 }

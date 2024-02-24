@@ -32,12 +32,8 @@ C:\Users\GIGABYTE\source\repos\Image Processing\Image-processing\Project CS3\bin
 C:\Users\GIGABYTE\source\repos\Image Processing\Image-processing\Project CS3\bin\Debug\Project CS3.exe.config
 C:\Users\GIGABYTE\source\repos\Image Processing\Image-processing\Project CS3\bin\Debug\Project CS3.exe
 C:\Users\GIGABYTE\source\repos\Image Processing\Image-processing\Project CS3\bin\Debug\Project CS3.pdb
-C:\Users\GIGABYTE\source\repos\Image Processing\Image-processing\Project CS3\bin\Debug\ZedGraph.dll
-C:\Users\GIGABYTE\source\repos\Image Processing\Image-processing\Project CS3\bin\Debug\Emgu.CV.UI.xml
-C:\Users\GIGABYTE\source\repos\Image Processing\Image-processing\Project CS3\bin\Debug\Emgu.CV.World.xml
 C:\Users\GIGABYTE\source\repos\Image Processing\Image-processing\Project CS3\obj\Debug\Project CS3.csproj.AssemblyReference.cache
 C:\Users\GIGABYTE\source\repos\Image Processing\Image-processing\Project CS3\obj\Debug\Project CS3.csproj.SuggestedBindingRedirects.cache
-C:\Users\GIGABYTE\source\repos\Image Processing\Image-processing\Project CS3\obj\Debug\Project_CS3.Binary.resources
 C:\Users\GIGABYTE\source\repos\Image Processing\Image-processing\Project CS3\obj\Debug\Project_CS3.Contour.resources
 C:\Users\GIGABYTE\source\repos\Image Processing\Image-processing\Project CS3\obj\Debug\Project_CS3.Edge_Detection.resources
 C:\Users\GIGABYTE\source\repos\Image Processing\Image-processing\Project CS3\obj\Debug\Project_CS3.Histogram_Equalization.resources
@@ -58,3 +54,4 @@ C:\Users\GIGABYTE\source\repos\Image Processing\Image-processing\Project CS3\bin
 C:\Users\GIGABYTE\source\repos\Image Processing\Image-processing\Project CS3\bin\Debug\AForge.Imaging.xml
 C:\Users\GIGABYTE\source\repos\Image Processing\Image-processing\Project CS3\bin\Debug\AForge.Math.xml
 C:\Users\GIGABYTE\source\repos\Image Processing\Image-processing\Project CS3\obj\Debug\Project_CS3.Form1.resources
+C:\Users\GIGABYTE\source\repos\Image Processing\Image-processing\Project CS3\obj\Debug\Project_CS3.BinaryModule.resources

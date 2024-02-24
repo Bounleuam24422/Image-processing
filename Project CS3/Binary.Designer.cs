@@ -1,6 +1,6 @@
 ﻿namespace Project_CS3
 {
-	partial class Binary
+	partial class BinaryModule
 	{
 		/// <summary>
 		/// Required designer variable.
@@ -39,12 +39,13 @@
 			this.pictureBox2 = new System.Windows.Forms.PictureBox();
 			this.pictureBox1 = new System.Windows.Forms.PictureBox();
 			this.pictureBox15 = new System.Windows.Forms.PictureBox();
-			this.button2 = new System.Windows.Forms.Button();
+			this.btnClose = new System.Windows.Forms.Button();
 			this.btnSave = new System.Windows.Forms.Button();
 			this.btnOpen = new System.Windows.Forms.Button();
 			this.imgBinary = new Emgu.CV.UI.ImageBox();
 			this.imgInput = new Emgu.CV.UI.ImageBox();
 			this.imgGray = new Emgu.CV.UI.ImageBox();
+			this.panel1 = new System.Windows.Forms.Panel();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -53,12 +54,13 @@
 			((System.ComponentModel.ISupportInitialize)(this.imgBinary)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.imgInput)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.imgGray)).BeginInit();
+			this.panel1.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// btnBinary
 			// 
 			this.btnBinary.BackColor = System.Drawing.Color.SandyBrown;
-			this.btnBinary.Location = new System.Drawing.Point(730, 34);
+			this.btnBinary.Location = new System.Drawing.Point(1172, 94);
 			this.btnBinary.Name = "btnBinary";
 			this.btnBinary.Size = new System.Drawing.Size(154, 45);
 			this.btnBinary.TabIndex = 91;
@@ -69,7 +71,7 @@
 			// btnMean
 			// 
 			this.btnMean.BackColor = System.Drawing.Color.SandyBrown;
-			this.btnMean.Location = new System.Drawing.Point(730, 295);
+			this.btnMean.Location = new System.Drawing.Point(1172, 355);
 			this.btnMean.Name = "btnMean";
 			this.btnMean.Size = new System.Drawing.Size(154, 45);
 			this.btnMean.TabIndex = 90;
@@ -80,7 +82,7 @@
 			// btnOT_Su
 			// 
 			this.btnOT_Su.BackColor = System.Drawing.Color.SandyBrown;
-			this.btnOT_Su.Location = new System.Drawing.Point(730, 163);
+			this.btnOT_Su.Location = new System.Drawing.Point(1172, 223);
 			this.btnOT_Su.Name = "btnOT_Su";
 			this.btnOT_Su.Size = new System.Drawing.Size(154, 45);
 			this.btnOT_Su.TabIndex = 89;
@@ -91,7 +93,7 @@
 			// btnGuasian
 			// 
 			this.btnGuasian.BackColor = System.Drawing.Color.SandyBrown;
-			this.btnGuasian.Location = new System.Drawing.Point(730, 227);
+			this.btnGuasian.Location = new System.Drawing.Point(1172, 287);
 			this.btnGuasian.Name = "btnGuasian";
 			this.btnGuasian.Size = new System.Drawing.Size(154, 45);
 			this.btnGuasian.TabIndex = 88;
@@ -102,7 +104,7 @@
 			// btnBiny_Inver
 			// 
 			this.btnBiny_Inver.BackColor = System.Drawing.Color.SandyBrown;
-			this.btnBiny_Inver.Location = new System.Drawing.Point(730, 99);
+			this.btnBiny_Inver.Location = new System.Drawing.Point(1172, 159);
 			this.btnBiny_Inver.Name = "btnBiny_Inver";
 			this.btnBiny_Inver.Size = new System.Drawing.Size(154, 45);
 			this.btnBiny_Inver.TabIndex = 87;
@@ -113,7 +115,7 @@
 			// pictureBox4
 			// 
 			this.pictureBox4.Image = global::Project_CS3.Properties.Resources.picB5;
-			this.pictureBox4.Location = new System.Drawing.Point(910, 295);
+			this.pictureBox4.Location = new System.Drawing.Point(1352, 355);
 			this.pictureBox4.Name = "pictureBox4";
 			this.pictureBox4.Size = new System.Drawing.Size(67, 45);
 			this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -123,7 +125,7 @@
 			// pictureBox3
 			// 
 			this.pictureBox3.Image = global::Project_CS3.Properties.Resources.picB4;
-			this.pictureBox3.Location = new System.Drawing.Point(910, 227);
+			this.pictureBox3.Location = new System.Drawing.Point(1352, 287);
 			this.pictureBox3.Name = "pictureBox3";
 			this.pictureBox3.Size = new System.Drawing.Size(67, 45);
 			this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -133,7 +135,7 @@
 			// pictureBox2
 			// 
 			this.pictureBox2.Image = global::Project_CS3.Properties.Resources.picB3;
-			this.pictureBox2.Location = new System.Drawing.Point(910, 162);
+			this.pictureBox2.Location = new System.Drawing.Point(1352, 222);
 			this.pictureBox2.Name = "pictureBox2";
 			this.pictureBox2.Size = new System.Drawing.Size(67, 45);
 			this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -143,7 +145,7 @@
 			// pictureBox1
 			// 
 			this.pictureBox1.Image = global::Project_CS3.Properties.Resources.picB2;
-			this.pictureBox1.Location = new System.Drawing.Point(910, 99);
+			this.pictureBox1.Location = new System.Drawing.Point(1352, 159);
 			this.pictureBox1.Name = "pictureBox1";
 			this.pictureBox1.Size = new System.Drawing.Size(67, 45);
 			this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -153,33 +155,33 @@
 			// pictureBox15
 			// 
 			this.pictureBox15.Image = global::Project_CS3.Properties.Resources.picB1;
-			this.pictureBox15.Location = new System.Drawing.Point(910, 34);
+			this.pictureBox15.Location = new System.Drawing.Point(1352, 94);
 			this.pictureBox15.Name = "pictureBox15";
 			this.pictureBox15.Size = new System.Drawing.Size(67, 45);
 			this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
 			this.pictureBox15.TabIndex = 99;
 			this.pictureBox15.TabStop = false;
 			// 
-			// button2
+			// btnClose
 			// 
-			this.button2.BackColor = System.Drawing.Color.HotPink;
-			this.button2.Image = global::Project_CS3.Properties.Resources.door_open__1_;
-			this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.button2.Location = new System.Drawing.Point(803, 471);
-			this.button2.Name = "button2";
-			this.button2.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-			this.button2.Size = new System.Drawing.Size(154, 45);
-			this.button2.TabIndex = 20;
-			this.button2.Text = "Open";
-			this.button2.UseVisualStyleBackColor = false;
-			this.button2.Click += new System.EventHandler(this.btnClose_Click);
+			this.btnClose.BackColor = System.Drawing.Color.HotPink;
+			this.btnClose.Image = global::Project_CS3.Properties.Resources.door_open__1_;
+			this.btnClose.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.btnClose.Location = new System.Drawing.Point(643, 586);
+			this.btnClose.Name = "btnClose";
+			this.btnClose.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+			this.btnClose.Size = new System.Drawing.Size(154, 45);
+			this.btnClose.TabIndex = 20;
+			this.btnClose.Text = "Exit";
+			this.btnClose.UseVisualStyleBackColor = false;
+			this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
 			// 
 			// btnSave
 			// 
 			this.btnSave.BackColor = System.Drawing.Color.HotPink;
 			this.btnSave.Image = global::Project_CS3.Properties.Resources.save_to_drive;
 			this.btnSave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.btnSave.Location = new System.Drawing.Point(608, 471);
+			this.btnSave.Location = new System.Drawing.Point(448, 586);
 			this.btnSave.Name = "btnSave";
 			this.btnSave.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
 			this.btnSave.Size = new System.Drawing.Size(154, 45);
@@ -193,7 +195,7 @@
 			this.btnOpen.BackColor = System.Drawing.Color.HotPink;
 			this.btnOpen.Image = global::Project_CS3.Properties.Resources.drag_and_drop;
 			this.btnOpen.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.btnOpen.Location = new System.Drawing.Point(418, 471);
+			this.btnOpen.Location = new System.Drawing.Point(258, 586);
 			this.btnOpen.Name = "btnOpen";
 			this.btnOpen.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
 			this.btnOpen.Size = new System.Drawing.Size(154, 45);
@@ -204,36 +206,49 @@
 			// 
 			// imgBinary
 			// 
-			this.imgBinary.Location = new System.Drawing.Point(360, 34);
+			this.imgBinary.Location = new System.Drawing.Point(549, 4);
 			this.imgBinary.Name = "imgBinary";
-			this.imgBinary.Size = new System.Drawing.Size(300, 238);
+			this.imgBinary.Size = new System.Drawing.Size(537, 460);
 			this.imgBinary.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
 			this.imgBinary.TabIndex = 13;
 			this.imgBinary.TabStop = false;
 			// 
 			// imgInput
 			// 
-			this.imgInput.Location = new System.Drawing.Point(43, 34);
+			this.imgInput.Location = new System.Drawing.Point(5, 3);
 			this.imgInput.Name = "imgInput";
-			this.imgInput.Size = new System.Drawing.Size(300, 238);
+			this.imgInput.Size = new System.Drawing.Size(537, 460);
 			this.imgInput.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
 			this.imgInput.TabIndex = 14;
 			this.imgInput.TabStop = false;
 			// 
 			// imgGray
 			// 
-			this.imgGray.Location = new System.Drawing.Point(43, 278);
+			this.imgGray.Location = new System.Drawing.Point(1523, 586);
 			this.imgGray.Name = "imgGray";
-			this.imgGray.Size = new System.Drawing.Size(300, 238);
+			this.imgGray.Size = new System.Drawing.Size(10, 10);
 			this.imgGray.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
 			this.imgGray.TabIndex = 15;
 			this.imgGray.TabStop = false;
+			this.imgGray.Visible = false;
 			// 
-			// Binary
+			// panel1
+			// 
+			this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+			this.panel1.Controls.Add(this.imgInput);
+			this.panel1.Controls.Add(this.imgBinary);
+			this.panel1.Location = new System.Drawing.Point(40, 31);
+			this.panel1.Name = "panel1";
+			this.panel1.Size = new System.Drawing.Size(1091, 468);
+			this.panel1.TabIndex = 100;
+			// 
+			// BinaryModule
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(1196, 561);
+			this.BackColor = System.Drawing.Color.Yellow;
+			this.ClientSize = new System.Drawing.Size(1532, 689);
+			this.Controls.Add(this.imgGray);
 			this.Controls.Add(this.pictureBox4);
 			this.Controls.Add(this.pictureBox3);
 			this.Controls.Add(this.pictureBox2);
@@ -244,13 +259,12 @@
 			this.Controls.Add(this.btnOT_Su);
 			this.Controls.Add(this.btnGuasian);
 			this.Controls.Add(this.btnBiny_Inver);
-			this.Controls.Add(this.button2);
+			this.Controls.Add(this.btnClose);
 			this.Controls.Add(this.btnSave);
 			this.Controls.Add(this.btnOpen);
-			this.Controls.Add(this.imgBinary);
-			this.Controls.Add(this.imgInput);
-			this.Controls.Add(this.imgGray);
-			this.Name = "Binary";
+			this.Controls.Add(this.panel1);
+			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+			this.Name = "BinaryModule";
 			this.Text = "Binary";
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -260,6 +274,7 @@
 			((System.ComponentModel.ISupportInitialize)(this.imgBinary)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.imgInput)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.imgGray)).EndInit();
+			this.panel1.ResumeLayout(false);
 			this.ResumeLayout(false);
 
 		}
@@ -280,6 +295,7 @@
 		private System.Windows.Forms.PictureBox pictureBox3;
 		private System.Windows.Forms.PictureBox pictureBox4;
 		private System.Windows.Forms.Button btnSave;
-		private System.Windows.Forms.Button button2;
+		private System.Windows.Forms.Button btnClose;
+		private System.Windows.Forms.Panel panel1;
 	}
 }
