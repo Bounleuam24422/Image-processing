@@ -1,6 +1,6 @@
 ﻿namespace Project_CS3
 {
-	partial class Contour
+	partial class ContourModule
 	{
 		/// <summary>
 		/// Required designer variable.
@@ -98,15 +98,16 @@
 			// 
 			this.btnsubBinary.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
 			this.btnsubBinary.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btnsubBinary.Image = global::Project_CS3.Properties.Resources.file__1_1;
+			this.btnsubBinary.Image = global::Project_CS3.Properties.Resources.contour_line;
 			this.btnsubBinary.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.btnsubBinary.Location = new System.Drawing.Point(1270, 40);
+			this.btnsubBinary.Location = new System.Drawing.Point(1259, 40);
 			this.btnsubBinary.Name = "btnsubBinary";
-			this.btnsubBinary.Size = new System.Drawing.Size(130, 46);
+			this.btnsubBinary.Size = new System.Drawing.Size(167, 46);
 			this.btnsubBinary.TabIndex = 113;
-			this.btnsubBinary.Text = "Binary";
+			this.btnsubBinary.Text = "Contour";
 			this.btnsubBinary.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
 			this.btnsubBinary.UseVisualStyleBackColor = false;
+			this.btnsubBinary.Click += new System.EventHandler(this.btnsubBinary_Click);
 			// 
 			// btnClose
 			// 
@@ -168,7 +169,7 @@
 			this.imgInput.TabIndex = 9;
 			this.imgInput.TabStop = false;
 			// 
-			// Contour
+			// ContourModule
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -180,7 +181,8 @@
 			this.Controls.Add(this.btnSave);
 			this.Controls.Add(this.btnOpen);
 			this.Controls.Add(this.panel1);
-			this.Name = "Contour";
+			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+			this.Name = "ContourModule";
 			this.Text = "Contour";
 			this.Load += new System.EventHandler(this.Contour_Load);
 			this.panel1.ResumeLayout(false);

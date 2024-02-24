@@ -9,9 +9,9 @@ using System.Drawing;
 
 namespace Project_CS3
 {
-	public partial class Contour : Form
+	public partial class ContourModule : Form
 	{
-		public Contour()
+		public ContourModule()
 		{
 			InitializeComponent();
 			customizeDesing();
@@ -26,8 +26,8 @@ namespace Project_CS3
 			childForm.TopLevel = false;
 			childForm.FormBorderStyle = FormBorderStyle.None;
 			childForm.Dock = DockStyle.Fill;
-			panelBimary.Controls.Add(childForm);
-			panelBimary.Tag = childForm;
+			panelContour.Controls.Add(childForm);
+			panelContour.Tag = childForm;
 			childForm.BringToFront();
 			childForm.Show();
 		}
@@ -35,14 +35,14 @@ namespace Project_CS3
 		/* panelSlide*/
 		private void customizeDesing()
 		{
-			panelBimary.Visible = false;
+			panelContour.Visible = false;
 		}
 
 		/* hideSubmenu*/
 		private void hideSubmenu()
 		{
-			if (panelBimary.Visible == true)
-				panelBimary.Visible = false;
+			if (panelContour.Visible == true)
+				panelContour.Visible = false;
 
 		}
 
@@ -72,6 +72,11 @@ namespace Project_CS3
 		private void pictureBox15_Click(object sender, EventArgs e)
 		{
 
+			if (inputImage == null)
+			{
+				MessageBox.Show("Input image is empty. Please open an image first.");
+				return; // Exit the method if inputImage is empty
+			}
 			Image<Gray, byte> outputImage;
 			outputImage = inputImage.Convert<Gray, byte>().ThresholdBinaryInv(new Gray(150), new Gray(255));
 			VectorOfVectorOfPoint contour = new VectorOfVectorOfPoint();
@@ -148,6 +153,11 @@ namespace Project_CS3
 		private void btnClose_Click_1(object sender, EventArgs e)
 		{
 			this.Close();
+		}
+
+		private void btnsubBinary_Click(object sender, EventArgs e)
+		{
+			showSubmenu(panelContour);
 		}
 	}
 }

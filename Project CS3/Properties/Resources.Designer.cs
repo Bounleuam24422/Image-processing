@@ -83,6 +83,16 @@ namespace Project_CS3.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap contour_line {
+            get {
+                object obj = ResourceManager.GetObject("contour-line", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap crop {
             get {
                 object obj = ResourceManager.GetObject("crop", resourceCulture);
