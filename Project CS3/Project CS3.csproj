@@ -214,6 +214,18 @@
     <None Include="Resources\file %281%29.png" />
     <None Include="Resources\filter %281%29.png" />
     <None Include="Resources\file %281%291.png" />
+    <None Include="Resources\picM1.jpg" />
+    <None Include="Resources\picM2.jpg" />
+    <None Include="Resources\picM3.jpg" />
+    <None Include="Resources\picM4.jpg" />
+    <None Include="Resources\picM5.jpg" />
+    <None Include="Resources\picM6.jpg" />
+    <None Include="Resources\picM7.jpg" />
+    <None Include="Resources\PicMC1.jpg" />
+    <None Include="Resources\PicMC2.jpg" />
+    <None Include="Resources\PicMC3.jpg" />
+    <None Include="Resources\PicMC4.jpg" />
+    <None Include="Resources\document_shapes.png" />
     <Content Include="vcruntime140.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

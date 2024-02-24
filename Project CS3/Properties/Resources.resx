@@ -124,6 +124,9 @@
   <data name="dropbox (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\dropbox (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="picB3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\picB3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="chart_curve" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\chart_curve.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -132,6 +135,9 @@
   </data>
   <data name="save-to-drive" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\save-to-drive.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="picM4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\picM4.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="picf7" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\picf7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -142,14 +148,23 @@
   <data name="picf2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\picf2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="picM1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\picM1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="undo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\undo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="picf12" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\picf12.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="file (1)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\file (1)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="picf6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\picf6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="picf1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\picf1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PicMC2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PicMC2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="setting" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\setting.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -157,14 +172,20 @@
   <data name="picf5" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\picf5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="picf6" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\picf6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="file (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\file (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="filter (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\filter (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="picM5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\picM5.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="pic7" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pic7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="picf13" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\picf13.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="PicMC4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PicMC4.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="picB2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\picB2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -181,14 +202,26 @@
   <data name="picf9" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\picf9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="picM2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\picM2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="picf4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\picf4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="picB3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\picB3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="picf13" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\picf13.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PicMC1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PicMC1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="filter" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\filter.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="picM3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\picM3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="picM7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\picM7.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="picB1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\picB1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -196,25 +229,28 @@
   <data name="picf8" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\picf8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="PicMC3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PicMC3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="picf3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\picf3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="picB4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\picB4.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="picB5" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\picB5.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="picf12" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\picf12.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="picM6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\picM6.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="filter (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\filter (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="file (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\file (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="picB5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\picB5.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="filter (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\filter (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="file (1)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\file (1)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="document_shapes" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\document_shapes.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
