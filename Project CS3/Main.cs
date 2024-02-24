@@ -121,5 +121,10 @@ namespace Project_CS3
 		{
 			showSubmenu(panalFilter_Type);
 		}
+
+		private void btnMlogy_Click_1(object sender, EventArgs e)
+		{
+			openChildForm(new Morphology());
+		}
 	}
 }

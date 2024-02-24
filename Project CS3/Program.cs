@@ -17,7 +17,7 @@ namespace Project_CS3
 		{
 			Application.EnableVisualStyles();
 			Application.SetCompatibleTextRenderingDefault(false);
-			Application.Run(new Morphology());
+			Application.Run(new Main());
 		}
 	}
 }

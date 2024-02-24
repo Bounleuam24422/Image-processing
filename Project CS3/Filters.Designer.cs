@@ -49,6 +49,8 @@
 			this.label14 = new System.Windows.Forms.Label();
 			this.btnCrop = new System.Windows.Forms.Button();
 			this.panelSubfilters = new System.Windows.Forms.Panel();
+			this.label15 = new System.Windows.Forms.Label();
+			this.btnClose = new System.Windows.Forms.Button();
 			this.button2 = new System.Windows.Forms.Button();
 			this.pictureBox15 = new System.Windows.Forms.PictureBox();
 			this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -68,8 +70,6 @@
 			this.button4 = new System.Windows.Forms.Button();
 			this.button3 = new System.Windows.Forms.Button();
 			this.pictureBox1 = new System.Windows.Forms.PictureBox();
-			this.label15 = new System.Windows.Forms.Label();
-			this.btnClose = new System.Windows.Forms.Button();
 			((System.ComponentModel.ISupportInitialize)(this.trackBar3)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.trackBar2)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
@@ -329,15 +329,40 @@
 			this.panelSubfilters.Size = new System.Drawing.Size(388, 638);
 			this.panelSubfilters.TabIndex = 104;
 			// 
+			// label15
+			// 
+			this.label15.AutoSize = true;
+			this.label15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+			this.label15.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label15.Location = new System.Drawing.Point(211, 516);
+			this.label15.Name = "label15";
+			this.label15.Size = new System.Drawing.Size(74, 22);
+			this.label15.TabIndex = 103;
+			this.label15.Text = "Sharpen";
+			// 
+			// btnClose
+			// 
+			this.btnClose.BackColor = System.Drawing.Color.HotPink;
+			this.btnClose.Image = global::Project_CS3.Properties.Resources.door_open__1_;
+			this.btnClose.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.btnClose.Location = new System.Drawing.Point(93, 830);
+			this.btnClose.Name = "btnClose";
+			this.btnClose.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+			this.btnClose.Size = new System.Drawing.Size(167, 60);
+			this.btnClose.TabIndex = 106;
+			this.btnClose.Text = "Exit";
+			this.btnClose.UseVisualStyleBackColor = false;
+			this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+			// 
 			// button2
 			// 
 			this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
 			this.button2.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.button2.Image = global::Project_CS3.Properties.Resources.filter;
 			this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.button2.Location = new System.Drawing.Point(1255, 12);
+			this.button2.Location = new System.Drawing.Point(1237, 12);
 			this.button2.Name = "button2";
-			this.button2.Size = new System.Drawing.Size(113, 46);
+			this.button2.Size = new System.Drawing.Size(131, 46);
 			this.button2.TabIndex = 105;
 			this.button2.Text = "Filters";
 			this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -478,7 +503,7 @@
 			// 
 			// pictureBox2
 			// 
-			this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+			this.pictureBox2.BackColor = System.Drawing.Color.Teal;
 			this.pictureBox2.Location = new System.Drawing.Point(73, 64);
 			this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
 			this.pictureBox2.Name = "pictureBox2";
@@ -560,31 +585,6 @@
 			this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
 			this.pictureBox1.TabIndex = 29;
 			this.pictureBox1.TabStop = false;
-			// 
-			// label15
-			// 
-			this.label15.AutoSize = true;
-			this.label15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-			this.label15.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label15.Location = new System.Drawing.Point(211, 516);
-			this.label15.Name = "label15";
-			this.label15.Size = new System.Drawing.Size(74, 22);
-			this.label15.TabIndex = 103;
-			this.label15.Text = "Sharpen";
-			// 
-			// btnClose
-			// 
-			this.btnClose.BackColor = System.Drawing.Color.HotPink;
-			this.btnClose.Image = global::Project_CS3.Properties.Resources.door_open__1_;
-			this.btnClose.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.btnClose.Location = new System.Drawing.Point(93, 830);
-			this.btnClose.Name = "btnClose";
-			this.btnClose.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-			this.btnClose.Size = new System.Drawing.Size(167, 60);
-			this.btnClose.TabIndex = 106;
-			this.btnClose.Text = "Exit";
-			this.btnClose.UseVisualStyleBackColor = false;
-			this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
 			// 
 			// FiltersModule
 			// 

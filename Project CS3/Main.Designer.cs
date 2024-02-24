@@ -241,6 +241,7 @@
 			this.btnMlogy.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.btnMlogy.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
 			this.btnMlogy.UseVisualStyleBackColor = false;
+			this.btnMlogy.Click += new System.EventHandler(this.btnMlogy_Click_1);
 			// 
 			// btnbinary
 			// 

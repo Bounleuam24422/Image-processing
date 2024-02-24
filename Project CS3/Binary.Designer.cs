@@ -62,7 +62,7 @@
 			// 
 			// panel1
 			// 
-			this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+			this.panel1.BackColor = System.Drawing.Color.Teal;
 			this.panel1.Controls.Add(this.imgInput);
 			this.panel1.Controls.Add(this.imgBinary);
 			this.panel1.Location = new System.Drawing.Point(60, 78);
@@ -133,7 +133,7 @@
 			this.panelBimary.Controls.Add(this.pictureBox2);
 			this.panelBimary.Controls.Add(this.pictureBox3);
 			this.panelBimary.Controls.Add(this.pictureBox4);
-			this.panelBimary.Location = new System.Drawing.Point(1250, 78);
+			this.panelBimary.Location = new System.Drawing.Point(1310, 81);
 			this.panelBimary.Name = "panelBimary";
 			this.panelBimary.Size = new System.Drawing.Size(141, 559);
 			this.panelBimary.TabIndex = 109;
@@ -221,7 +221,7 @@
 			this.btnsubBinary.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.btnsubBinary.Image = global::Project_CS3.Properties.Resources.file__1_1;
 			this.btnsubBinary.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.btnsubBinary.Location = new System.Drawing.Point(1260, 23);
+			this.btnsubBinary.Location = new System.Drawing.Point(1320, 26);
 			this.btnsubBinary.Name = "btnsubBinary";
 			this.btnsubBinary.Size = new System.Drawing.Size(130, 46);
 			this.btnsubBinary.TabIndex = 110;
