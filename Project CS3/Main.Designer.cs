@@ -330,6 +330,7 @@
 			this.Name = "Main";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Form1";
+			this.Load += new System.EventHandler(this.Main_Load);
 			this.panelSideMenu.ResumeLayout(false);
 			this.panalFilter_Type.ResumeLayout(false);
 			this.panel4.ResumeLayout(false);

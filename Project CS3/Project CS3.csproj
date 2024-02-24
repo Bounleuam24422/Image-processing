@@ -233,6 +233,7 @@
     <None Include="Resources\picE2.jpg" />
     <None Include="Resources\picE3.jpg" />
     <None Include="Resources\picE4.jpg" />
+    <None Include="Resources\De.jpg" />
     <Content Include="vcruntime140.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

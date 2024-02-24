@@ -136,5 +136,10 @@ namespace Project_CS3
 		{
 			openChildForm(new Edge_Detection());
 		}
+
+		private void Main_Load(object sender, EventArgs e)
+		{
+
+		}
 	}
 }
