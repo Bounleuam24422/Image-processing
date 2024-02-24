@@ -81,7 +81,6 @@ C:\Users\GIGABYTE\Desktop\Fix C#\Image-processing\Project CS3\obj\Debug\Project_
 C:\Users\GIGABYTE\Desktop\Fix C#\Image-processing\Project CS3\obj\Debug\Project_CS3.Main.resources
 C:\Users\GIGABYTE\Desktop\Fix C#\Image-processing\Project CS3\obj\Debug\Project_CS3.Morphology.resources
 C:\Users\GIGABYTE\Desktop\Fix C#\Image-processing\Project CS3\obj\Debug\Project_CS3.Properties.Resources.resources
-C:\Users\GIGABYTE\Desktop\Fix C#\Image-processing\Project CS3\obj\Debug\Project_CS3.Web_cam.resources
 C:\Users\GIGABYTE\Desktop\Fix C#\Image-processing\Project CS3\obj\Debug\Project CS3.csproj.GenerateResource.cache
 C:\Users\GIGABYTE\Desktop\Fix C#\Image-processing\Project CS3\obj\Debug\Project CS3.csproj.CoreCompileInputs.cache
 C:\Users\GIGABYTE\Desktop\Fix C#\Image-processing\Project CS3\obj\Debug\Project CS3.csproj.CopyComplete
@@ -90,3 +89,4 @@ C:\Users\GIGABYTE\Desktop\Fix C#\Image-processing\Project CS3\obj\Debug\Project 
 C:\Users\GIGABYTE\Desktop\Fix C#\Image-processing\Project CS3\obj\Debug\Project_CS3.Histogram_Equalization.resources
 C:\Users\GIGABYTE\Desktop\Fix C#\Image-processing\Project CS3\obj\Debug\Project CS3.csproj.AssemblyReference.cache
 C:\Users\GIGABYTE\Desktop\Fix C#\Image-processing\Project CS3\obj\Debug\Project_CS3.ContourModule.resources
+C:\Users\GIGABYTE\Desktop\Fix C#\Image-processing\Project CS3\obj\Debug\Project_CS3.panelWeb_camModule.resources

@@ -146,5 +146,19 @@ namespace Project_CS3
 		{
 			openChildForm(new ContourModule());
 		}
+
+		private void btnWebcam_Click_1(object sender, EventArgs e)
+		{
+			openChildForm(new panelWeb_camModule());
+		}
+
+		private void btnClose_Click_1(object sender, EventArgs e)
+		{
+
+			if (MessageBox.Show("Logout Application?", "Logout", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+			{
+				this.Close();
+			}
+		}
 	}
 }

@@ -35,7 +35,7 @@
 			this.panel3 = new System.Windows.Forms.Panel();
 			this.lblTitle = new System.Windows.Forms.Label();
 			this.panelMain = new System.Windows.Forms.Panel();
-			this.button7 = new System.Windows.Forms.Button();
+			this.btnClose = new System.Windows.Forms.Button();
 			this.btnWebcam = new System.Windows.Forms.Button();
 			this.btnCntour = new System.Windows.Forms.Button();
 			this.button1 = new System.Windows.Forms.Button();
@@ -56,7 +56,7 @@
 			// 
 			this.panelSideMenu.AutoScroll = true;
 			this.panelSideMenu.BackColor = System.Drawing.Color.HotPink;
-			this.panelSideMenu.Controls.Add(this.button7);
+			this.panelSideMenu.Controls.Add(this.btnClose);
 			this.panelSideMenu.Controls.Add(this.btnWebcam);
 			this.panelSideMenu.Controls.Add(this.btnCntour);
 			this.panelSideMenu.Controls.Add(this.button1);
@@ -111,9 +111,9 @@
 			this.lblTitle.ForeColor = System.Drawing.Color.White;
 			this.lblTitle.Location = new System.Drawing.Point(451, 4);
 			this.lblTitle.Name = "lblTitle";
-			this.lblTitle.Size = new System.Drawing.Size(308, 33);
+			this.lblTitle.Size = new System.Drawing.Size(345, 33);
 			this.lblTitle.TabIndex = 0;
-			this.lblTitle.Text = "Welcome to photo editing.";
+			this.lblTitle.Text = "Welcome to Image Processing";
 			// 
 			// panelMain
 			// 
@@ -124,23 +124,25 @@
 			this.panelMain.Size = new System.Drawing.Size(1512, 769);
 			this.panelMain.TabIndex = 8;
 			// 
-			// button7
+			// btnClose
 			// 
-			this.button7.BackColor = System.Drawing.Color.HotPink;
-			this.button7.FlatAppearance.BorderSize = 0;
-			this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.button7.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.button7.ForeColor = System.Drawing.Color.Black;
-			this.button7.Image = ((System.Drawing.Image)(resources.GetObject("button7.Image")));
-			this.button7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.button7.Location = new System.Drawing.Point(0, 742);
-			this.button7.Name = "button7";
-			this.button7.Padding = new System.Windows.Forms.Padding(33, 0, 0, 0);
-			this.button7.Size = new System.Drawing.Size(264, 64);
-			this.button7.TabIndex = 2;
-			this.button7.Text = "Exit";
-			this.button7.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-			this.button7.UseVisualStyleBackColor = false;
+			this.btnClose.BackColor = System.Drawing.Color.HotPink;
+			this.btnClose.Dock = System.Windows.Forms.DockStyle.Bottom;
+			this.btnClose.FlatAppearance.BorderSize = 0;
+			this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.btnClose.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnClose.ForeColor = System.Drawing.Color.Black;
+			this.btnClose.Image = ((System.Drawing.Image)(resources.GetObject("btnClose.Image")));
+			this.btnClose.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.btnClose.Location = new System.Drawing.Point(0, 747);
+			this.btnClose.Name = "btnClose";
+			this.btnClose.Padding = new System.Windows.Forms.Padding(33, 0, 0, 0);
+			this.btnClose.Size = new System.Drawing.Size(264, 64);
+			this.btnClose.TabIndex = 2;
+			this.btnClose.Text = "Exit";
+			this.btnClose.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+			this.btnClose.UseVisualStyleBackColor = false;
+			this.btnClose.Click += new System.EventHandler(this.btnClose_Click_1);
 			// 
 			// btnWebcam
 			// 
@@ -161,6 +163,7 @@
 			this.btnWebcam.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
 			this.btnWebcam.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
 			this.btnWebcam.UseVisualStyleBackColor = false;
+			this.btnWebcam.Click += new System.EventHandler(this.btnWebcam_Click_1);
 			// 
 			// btnCntour
 			// 
@@ -311,10 +314,10 @@
 			// 
 			// pictureBox2
 			// 
-			this.pictureBox2.Image = global::Project_CS3.Properties.Resources.setting;
+			this.pictureBox2.Image = global::Project_CS3.Properties.Resources.convert;
 			this.pictureBox2.Location = new System.Drawing.Point(60, 52);
 			this.pictureBox2.Name = "pictureBox2";
-			this.pictureBox2.Size = new System.Drawing.Size(134, 88);
+			this.pictureBox2.Size = new System.Drawing.Size(132, 95);
 			this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
 			this.pictureBox2.TabIndex = 0;
 			this.pictureBox2.TabStop = false;
@@ -345,7 +348,7 @@
 		#endregion
 
 		private System.Windows.Forms.Panel panelSideMenu;
-		private System.Windows.Forms.Button button7;
+		private System.Windows.Forms.Button btnClose;
 		private System.Windows.Forms.Button btnWebcam;
 		private System.Windows.Forms.Button btnCntour;
 		private System.Windows.Forms.Button button1;

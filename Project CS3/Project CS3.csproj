@@ -235,6 +235,10 @@
     <None Include="Resources\picE4.jpg" />
     <None Include="Resources\De.jpg" />
     <None Include="Resources\contour-line.png" />
+    <None Include="Resources\play.png" />
+    <None Include="Resources\stop-button.png" />
+    <None Include="Resources\screenshot.png" />
+    <None Include="Resources\convert.png" />
     <Content Include="vcruntime140.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

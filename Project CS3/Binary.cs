@@ -74,6 +74,7 @@ namespace Project_CS3
 	private void btnClose_Click(object sender, EventArgs e)
 		{
 			this.Close();
+
 		}
 
 		private void btnOpen_Click(object sender, EventArgs e)
