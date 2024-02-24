@@ -31,6 +31,8 @@
 			this.components = new System.ComponentModel.Container();
 			this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
 			this.panel1 = new System.Windows.Forms.Panel();
+			this.imgOutput = new Emgu.CV.UI.ImageBox();
+			this.imgInput = new Emgu.CV.UI.ImageBox();
 			this.label10 = new System.Windows.Forms.Label();
 			this.panelContour = new System.Windows.Forms.Panel();
 			this.pictureBox15 = new System.Windows.Forms.PictureBox();
@@ -38,13 +40,11 @@
 			this.btnClose = new System.Windows.Forms.Button();
 			this.btnSave = new System.Windows.Forms.Button();
 			this.btnOpen = new System.Windows.Forms.Button();
-			this.imgOutput = new Emgu.CV.UI.ImageBox();
-			this.imgInput = new Emgu.CV.UI.ImageBox();
 			this.panel1.SuspendLayout();
-			this.panelContour.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.imgOutput)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.imgInput)).BeginInit();
+			this.panelContour.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// contextMenuStrip1
@@ -58,10 +58,28 @@
 			this.panel1.BackColor = System.Drawing.Color.Teal;
 			this.panel1.Controls.Add(this.imgOutput);
 			this.panel1.Controls.Add(this.imgInput);
-			this.panel1.Location = new System.Drawing.Point(67, 96);
+			this.panel1.Location = new System.Drawing.Point(70, 82);
 			this.panel1.Name = "panel1";
 			this.panel1.Size = new System.Drawing.Size(1117, 568);
 			this.panel1.TabIndex = 11;
+			// 
+			// imgOutput
+			// 
+			this.imgOutput.Location = new System.Drawing.Point(547, 4);
+			this.imgOutput.Name = "imgOutput";
+			this.imgOutput.Size = new System.Drawing.Size(565, 558);
+			this.imgOutput.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+			this.imgOutput.TabIndex = 8;
+			this.imgOutput.TabStop = false;
+			// 
+			// imgInput
+			// 
+			this.imgInput.Location = new System.Drawing.Point(4, 3);
+			this.imgInput.Name = "imgInput";
+			this.imgInput.Size = new System.Drawing.Size(537, 559);
+			this.imgInput.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+			this.imgInput.TabIndex = 9;
+			this.imgInput.TabStop = false;
 			// 
 			// label10
 			// 
@@ -78,7 +96,7 @@
 			// 
 			this.panelContour.Controls.Add(this.label10);
 			this.panelContour.Controls.Add(this.pictureBox15);
-			this.panelContour.Location = new System.Drawing.Point(1270, 92);
+			this.panelContour.Location = new System.Drawing.Point(1326, 91);
 			this.panelContour.Name = "panelContour";
 			this.panelContour.Size = new System.Drawing.Size(140, 108);
 			this.panelContour.TabIndex = 114;
@@ -100,7 +118,7 @@
 			this.btnsubBinary.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.btnsubBinary.Image = global::Project_CS3.Properties.Resources.contour_line;
 			this.btnsubBinary.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.btnsubBinary.Location = new System.Drawing.Point(1259, 40);
+			this.btnsubBinary.Location = new System.Drawing.Point(1318, 26);
 			this.btnsubBinary.Name = "btnsubBinary";
 			this.btnsubBinary.Size = new System.Drawing.Size(167, 46);
 			this.btnsubBinary.TabIndex = 113;
@@ -114,7 +132,7 @@
 			this.btnClose.BackColor = System.Drawing.Color.HotPink;
 			this.btnClose.Image = global::Project_CS3.Properties.Resources.door_open__1_;
 			this.btnClose.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.btnClose.Location = new System.Drawing.Point(720, 745);
+			this.btnClose.Location = new System.Drawing.Point(754, 722);
 			this.btnClose.Name = "btnClose";
 			this.btnClose.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
 			this.btnClose.Size = new System.Drawing.Size(167, 60);
@@ -128,7 +146,7 @@
 			this.btnSave.BackColor = System.Drawing.Color.HotPink;
 			this.btnSave.Image = global::Project_CS3.Properties.Resources.save_to_drive;
 			this.btnSave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.btnSave.Location = new System.Drawing.Point(488, 745);
+			this.btnSave.Location = new System.Drawing.Point(522, 722);
 			this.btnSave.Name = "btnSave";
 			this.btnSave.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
 			this.btnSave.Size = new System.Drawing.Size(167, 60);
@@ -142,7 +160,7 @@
 			this.btnOpen.BackColor = System.Drawing.Color.HotPink;
 			this.btnOpen.Image = global::Project_CS3.Properties.Resources.drag_and_drop;
 			this.btnOpen.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.btnOpen.Location = new System.Drawing.Point(261, 745);
+			this.btnOpen.Location = new System.Drawing.Point(295, 722);
 			this.btnOpen.Name = "btnOpen";
 			this.btnOpen.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
 			this.btnOpen.Size = new System.Drawing.Size(167, 60);
@@ -150,24 +168,6 @@
 			this.btnOpen.Text = "Open";
 			this.btnOpen.UseVisualStyleBackColor = false;
 			this.btnOpen.Click += new System.EventHandler(this.btnOpen_Click);
-			// 
-			// imgOutput
-			// 
-			this.imgOutput.Location = new System.Drawing.Point(547, 4);
-			this.imgOutput.Name = "imgOutput";
-			this.imgOutput.Size = new System.Drawing.Size(565, 558);
-			this.imgOutput.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-			this.imgOutput.TabIndex = 8;
-			this.imgOutput.TabStop = false;
-			// 
-			// imgInput
-			// 
-			this.imgInput.Location = new System.Drawing.Point(4, 3);
-			this.imgInput.Name = "imgInput";
-			this.imgInput.Size = new System.Drawing.Size(537, 559);
-			this.imgInput.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-			this.imgInput.TabIndex = 9;
-			this.imgInput.TabStop = false;
 			// 
 			// ContourModule
 			// 
@@ -186,11 +186,11 @@
 			this.Text = "Contour";
 			this.Load += new System.EventHandler(this.Contour_Load);
 			this.panel1.ResumeLayout(false);
+			((System.ComponentModel.ISupportInitialize)(this.imgOutput)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.imgInput)).EndInit();
 			this.panelContour.ResumeLayout(false);
 			this.panelContour.PerformLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.imgOutput)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.imgInput)).EndInit();
 			this.ResumeLayout(false);
 
 		}

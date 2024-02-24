@@ -30,6 +30,8 @@
 		{
 			this.components = new System.ComponentModel.Container();
 			this.panel1 = new System.Windows.Forms.Panel();
+			this.imgOutput = new Emgu.CV.UI.ImageBox();
+			this.imgInput = new Emgu.CV.UI.ImageBox();
 			this.label10 = new System.Windows.Forms.Label();
 			this.label2 = new System.Windows.Forms.Label();
 			this.label12 = new System.Windows.Forms.Label();
@@ -41,15 +43,13 @@
 			this.btnClose = new System.Windows.Forms.Button();
 			this.btnSave = new System.Windows.Forms.Button();
 			this.btnOpen = new System.Windows.Forms.Button();
-			this.imgOutput = new Emgu.CV.UI.ImageBox();
-			this.imgInput = new Emgu.CV.UI.ImageBox();
 			this.panel1.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.imgOutput)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.imgInput)).BeginInit();
 			this.panelSubEdDtion.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.imgOutput)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.imgInput)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// panel1
@@ -57,10 +57,28 @@
 			this.panel1.BackColor = System.Drawing.Color.Teal;
 			this.panel1.Controls.Add(this.imgOutput);
 			this.panel1.Controls.Add(this.imgInput);
-			this.panel1.Location = new System.Drawing.Point(64, 91);
+			this.panel1.Location = new System.Drawing.Point(70, 82);
 			this.panel1.Name = "panel1";
 			this.panel1.Size = new System.Drawing.Size(1114, 575);
 			this.panel1.TabIndex = 10;
+			// 
+			// imgOutput
+			// 
+			this.imgOutput.Location = new System.Drawing.Point(557, 3);
+			this.imgOutput.Name = "imgOutput";
+			this.imgOutput.Size = new System.Drawing.Size(554, 569);
+			this.imgOutput.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+			this.imgOutput.TabIndex = 9;
+			this.imgOutput.TabStop = false;
+			// 
+			// imgInput
+			// 
+			this.imgInput.Location = new System.Drawing.Point(3, 3);
+			this.imgInput.Name = "imgInput";
+			this.imgInput.Size = new System.Drawing.Size(551, 569);
+			this.imgInput.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+			this.imgInput.TabIndex = 8;
+			this.imgInput.TabStop = false;
 			// 
 			// label10
 			// 
@@ -161,7 +179,7 @@
 			this.btnClose.BackColor = System.Drawing.Color.HotPink;
 			this.btnClose.Image = global::Project_CS3.Properties.Resources.door_open__1_;
 			this.btnClose.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.btnClose.Location = new System.Drawing.Point(697, 740);
+			this.btnClose.Location = new System.Drawing.Point(754, 722);
 			this.btnClose.Name = "btnClose";
 			this.btnClose.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
 			this.btnClose.Size = new System.Drawing.Size(167, 60);
@@ -175,7 +193,7 @@
 			this.btnSave.BackColor = System.Drawing.Color.HotPink;
 			this.btnSave.Image = global::Project_CS3.Properties.Resources.save_to_drive;
 			this.btnSave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.btnSave.Location = new System.Drawing.Point(465, 740);
+			this.btnSave.Location = new System.Drawing.Point(522, 722);
 			this.btnSave.Name = "btnSave";
 			this.btnSave.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
 			this.btnSave.Size = new System.Drawing.Size(167, 60);
@@ -189,7 +207,7 @@
 			this.btnOpen.BackColor = System.Drawing.Color.HotPink;
 			this.btnOpen.Image = global::Project_CS3.Properties.Resources.drag_and_drop;
 			this.btnOpen.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.btnOpen.Location = new System.Drawing.Point(238, 740);
+			this.btnOpen.Location = new System.Drawing.Point(295, 722);
 			this.btnOpen.Name = "btnOpen";
 			this.btnOpen.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
 			this.btnOpen.Size = new System.Drawing.Size(167, 60);
@@ -197,24 +215,6 @@
 			this.btnOpen.Text = "Open";
 			this.btnOpen.UseVisualStyleBackColor = false;
 			this.btnOpen.Click += new System.EventHandler(this.btnOpen_Click);
-			// 
-			// imgOutput
-			// 
-			this.imgOutput.Location = new System.Drawing.Point(557, 3);
-			this.imgOutput.Name = "imgOutput";
-			this.imgOutput.Size = new System.Drawing.Size(554, 569);
-			this.imgOutput.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-			this.imgOutput.TabIndex = 9;
-			this.imgOutput.TabStop = false;
-			// 
-			// imgInput
-			// 
-			this.imgInput.Location = new System.Drawing.Point(3, 3);
-			this.imgInput.Name = "imgInput";
-			this.imgInput.Size = new System.Drawing.Size(551, 569);
-			this.imgInput.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-			this.imgInput.TabIndex = 8;
-			this.imgInput.TabStop = false;
 			// 
 			// Edge_Detection
 			// 
@@ -231,13 +231,13 @@
 			this.Name = "Edge_Detection";
 			this.Text = "Edge_Detection";
 			this.panel1.ResumeLayout(false);
+			((System.ComponentModel.ISupportInitialize)(this.imgOutput)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.imgInput)).EndInit();
 			this.panelSubEdDtion.ResumeLayout(false);
 			this.panelSubEdDtion.PerformLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.imgOutput)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.imgInput)).EndInit();
 			this.ResumeLayout(false);
 
 		}

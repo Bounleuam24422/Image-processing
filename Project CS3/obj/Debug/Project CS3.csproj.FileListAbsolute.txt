@@ -77,7 +77,6 @@ C:\Users\GIGABYTE\Desktop\Fix C#\Image-processing\Project CS3\bin\Debug\Emgu.CV.
 C:\Users\GIGABYTE\Desktop\Fix C#\Image-processing\Project CS3\obj\Debug\Project_CS3.BinaryModule.resources
 C:\Users\GIGABYTE\Desktop\Fix C#\Image-processing\Project CS3\obj\Debug\Project_CS3.Edge_Detection.resources
 C:\Users\GIGABYTE\Desktop\Fix C#\Image-processing\Project CS3\obj\Debug\Project_CS3.FiltersModule.resources
-C:\Users\GIGABYTE\Desktop\Fix C#\Image-processing\Project CS3\obj\Debug\Project_CS3.Form1.resources
 C:\Users\GIGABYTE\Desktop\Fix C#\Image-processing\Project CS3\obj\Debug\Project_CS3.Main.resources
 C:\Users\GIGABYTE\Desktop\Fix C#\Image-processing\Project CS3\obj\Debug\Project_CS3.Morphology.resources
 C:\Users\GIGABYTE\Desktop\Fix C#\Image-processing\Project CS3\obj\Debug\Project_CS3.Properties.Resources.resources
