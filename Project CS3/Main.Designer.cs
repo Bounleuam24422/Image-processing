@@ -30,26 +30,26 @@
 		{
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
 			this.panelSideMenu = new System.Windows.Forms.Panel();
-			this.panalFilter_Type = new System.Windows.Forms.Panel();
-			this.panel4 = new System.Windows.Forms.Panel();
-			this.panel3 = new System.Windows.Forms.Panel();
-			this.lblTitle = new System.Windows.Forms.Label();
-			this.panelMain = new System.Windows.Forms.Panel();
 			this.button7 = new System.Windows.Forms.Button();
 			this.btnWebcam = new System.Windows.Forms.Button();
 			this.btnCntour = new System.Windows.Forms.Button();
 			this.button1 = new System.Windows.Forms.Button();
+			this.panalFilter_Type = new System.Windows.Forms.Panel();
 			this.btnEdDtion = new System.Windows.Forms.Button();
 			this.btnMlogy = new System.Windows.Forms.Button();
 			this.btnbinary = new System.Windows.Forms.Button();
 			this.btnFilter = new System.Windows.Forms.Button();
 			this.btnFter_Typ = new System.Windows.Forms.Button();
+			this.panel4 = new System.Windows.Forms.Panel();
 			this.pictureBox2 = new System.Windows.Forms.PictureBox();
+			this.panel3 = new System.Windows.Forms.Panel();
+			this.lblTitle = new System.Windows.Forms.Label();
+			this.panelMain = new System.Windows.Forms.Panel();
 			this.panelSideMenu.SuspendLayout();
 			this.panalFilter_Type.SuspendLayout();
 			this.panel4.SuspendLayout();
-			this.panel3.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+			this.panel3.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// panelSideMenu
@@ -69,60 +69,6 @@
 			this.panelSideMenu.Name = "panelSideMenu";
 			this.panelSideMenu.Size = new System.Drawing.Size(264, 811);
 			this.panelSideMenu.TabIndex = 3;
-			// 
-			// panalFilter_Type
-			// 
-			this.panalFilter_Type.Controls.Add(this.btnEdDtion);
-			this.panalFilter_Type.Controls.Add(this.btnMlogy);
-			this.panalFilter_Type.Controls.Add(this.btnbinary);
-			this.panalFilter_Type.Controls.Add(this.btnFilter);
-			this.panalFilter_Type.Dock = System.Windows.Forms.DockStyle.Top;
-			this.panalFilter_Type.Location = new System.Drawing.Point(0, 241);
-			this.panalFilter_Type.Name = "panalFilter_Type";
-			this.panalFilter_Type.Size = new System.Drawing.Size(264, 210);
-			this.panalFilter_Type.TabIndex = 46;
-			// 
-			// panel4
-			// 
-			this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-			this.panel4.Controls.Add(this.pictureBox2);
-			this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
-			this.panel4.Location = new System.Drawing.Point(0, 0);
-			this.panel4.Name = "panel4";
-			this.panel4.Size = new System.Drawing.Size(264, 191);
-			this.panel4.TabIndex = 10;
-			// 
-			// panel3
-			// 
-			this.panel3.BackColor = System.Drawing.Color.Teal;
-			this.panel3.Controls.Add(this.lblTitle);
-			this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-			this.panel3.Location = new System.Drawing.Point(264, 0);
-			this.panel3.Name = "panel3";
-			this.panel3.Size = new System.Drawing.Size(1512, 42);
-			this.panel3.TabIndex = 7;
-			// 
-			// lblTitle
-			// 
-			this.lblTitle.Anchor = System.Windows.Forms.AnchorStyles.None;
-			this.lblTitle.AutoSize = true;
-			this.lblTitle.BackColor = System.Drawing.Color.Teal;
-			this.lblTitle.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lblTitle.ForeColor = System.Drawing.Color.White;
-			this.lblTitle.Location = new System.Drawing.Point(451, 4);
-			this.lblTitle.Name = "lblTitle";
-			this.lblTitle.Size = new System.Drawing.Size(308, 33);
-			this.lblTitle.TabIndex = 0;
-			this.lblTitle.Text = "Welcome to photo editing.";
-			// 
-			// panelMain
-			// 
-			this.panelMain.BackColor = System.Drawing.Color.Yellow;
-			this.panelMain.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.panelMain.Location = new System.Drawing.Point(264, 42);
-			this.panelMain.Name = "panelMain";
-			this.panelMain.Size = new System.Drawing.Size(1512, 769);
-			this.panelMain.TabIndex = 8;
 			// 
 			// button7
 			// 
@@ -201,6 +147,19 @@
 			this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
 			this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
 			this.button1.UseVisualStyleBackColor = false;
+			this.button1.Click += new System.EventHandler(this.button1_Click);
+			// 
+			// panalFilter_Type
+			// 
+			this.panalFilter_Type.Controls.Add(this.btnEdDtion);
+			this.panalFilter_Type.Controls.Add(this.btnMlogy);
+			this.panalFilter_Type.Controls.Add(this.btnbinary);
+			this.panalFilter_Type.Controls.Add(this.btnFilter);
+			this.panalFilter_Type.Dock = System.Windows.Forms.DockStyle.Top;
+			this.panalFilter_Type.Location = new System.Drawing.Point(0, 241);
+			this.panalFilter_Type.Name = "panalFilter_Type";
+			this.panalFilter_Type.Size = new System.Drawing.Size(264, 210);
+			this.panalFilter_Type.TabIndex = 46;
 			// 
 			// btnEdDtion
 			// 
@@ -306,6 +265,16 @@
 			this.btnFter_Typ.UseVisualStyleBackColor = false;
 			this.btnFter_Typ.Click += new System.EventHandler(this.btnFter_Typ_Click);
 			// 
+			// panel4
+			// 
+			this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+			this.panel4.Controls.Add(this.pictureBox2);
+			this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
+			this.panel4.Location = new System.Drawing.Point(0, 0);
+			this.panel4.Name = "panel4";
+			this.panel4.Size = new System.Drawing.Size(264, 191);
+			this.panel4.TabIndex = 10;
+			// 
 			// pictureBox2
 			// 
 			this.pictureBox2.Image = global::Project_CS3.Properties.Resources.setting;
@@ -315,6 +284,38 @@
 			this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
 			this.pictureBox2.TabIndex = 0;
 			this.pictureBox2.TabStop = false;
+			// 
+			// panel3
+			// 
+			this.panel3.BackColor = System.Drawing.Color.Teal;
+			this.panel3.Controls.Add(this.lblTitle);
+			this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
+			this.panel3.Location = new System.Drawing.Point(264, 0);
+			this.panel3.Name = "panel3";
+			this.panel3.Size = new System.Drawing.Size(1512, 42);
+			this.panel3.TabIndex = 7;
+			// 
+			// lblTitle
+			// 
+			this.lblTitle.Anchor = System.Windows.Forms.AnchorStyles.None;
+			this.lblTitle.AutoSize = true;
+			this.lblTitle.BackColor = System.Drawing.Color.Teal;
+			this.lblTitle.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lblTitle.ForeColor = System.Drawing.Color.White;
+			this.lblTitle.Location = new System.Drawing.Point(451, 4);
+			this.lblTitle.Name = "lblTitle";
+			this.lblTitle.Size = new System.Drawing.Size(308, 33);
+			this.lblTitle.TabIndex = 0;
+			this.lblTitle.Text = "Welcome to photo editing.";
+			// 
+			// panelMain
+			// 
+			this.panelMain.BackColor = System.Drawing.Color.Yellow;
+			this.panelMain.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.panelMain.Location = new System.Drawing.Point(264, 42);
+			this.panelMain.Name = "panelMain";
+			this.panelMain.Size = new System.Drawing.Size(1512, 769);
+			this.panelMain.TabIndex = 8;
 			// 
 			// Main
 			// 
@@ -331,9 +332,9 @@
 			this.panelSideMenu.ResumeLayout(false);
 			this.panalFilter_Type.ResumeLayout(false);
 			this.panel4.ResumeLayout(false);
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
 			this.panel3.ResumeLayout(false);
 			this.panel3.PerformLayout();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
 			this.ResumeLayout(false);
 
 		}

@@ -126,5 +126,10 @@ namespace Project_CS3
 		{
 			openChildForm(new Morphology());
 		}
+
+		private void button1_Click(object sender, EventArgs e)
+		{
+			openChildForm(new Histogram_Equalization());
+		}
 	}
 }

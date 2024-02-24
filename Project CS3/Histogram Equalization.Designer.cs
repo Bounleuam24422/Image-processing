@@ -175,7 +175,7 @@
 			this.panel1.Controls.Add(this.ImgBoxOutput);
 			this.panel1.Controls.Add(this.htgBeforeE);
 			this.panel1.Controls.Add(this.htgGray);
-			this.panel1.Location = new System.Drawing.Point(27, 116);
+			this.panel1.Location = new System.Drawing.Point(26, 116);
 			this.panel1.Name = "panel1";
 			this.panel1.Size = new System.Drawing.Size(1471, 667);
 			this.panel1.TabIndex = 62;
@@ -249,7 +249,7 @@
 			this.panelSubHisgram.Controls.Add(this.label5);
 			this.panelSubHisgram.Controls.Add(this.label4);
 			this.panelSubHisgram.Controls.Add(this.groupBox1);
-			this.panelSubHisgram.Location = new System.Drawing.Point(1638, 116);
+			this.panelSubHisgram.Location = new System.Drawing.Point(1505, 116);
 			this.panelSubHisgram.Name = "panelSubHisgram";
 			this.panelSubHisgram.Size = new System.Drawing.Size(263, 550);
 			this.panelSubHisgram.TabIndex = 105;
@@ -292,7 +292,7 @@
 			this.btnClose.BackColor = System.Drawing.Color.HotPink;
 			this.btnClose.Image = global::Project_CS3.Properties.Resources.door_open__1_;
 			this.btnClose.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.btnClose.Location = new System.Drawing.Point(841, 859);
+			this.btnClose.Location = new System.Drawing.Point(817, 834);
 			this.btnClose.Name = "btnClose";
 			this.btnClose.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
 			this.btnClose.Size = new System.Drawing.Size(167, 60);
@@ -306,7 +306,7 @@
 			this.btnSave.BackColor = System.Drawing.Color.HotPink;
 			this.btnSave.Image = global::Project_CS3.Properties.Resources.save_to_drive;
 			this.btnSave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.btnSave.Location = new System.Drawing.Point(609, 859);
+			this.btnSave.Location = new System.Drawing.Point(585, 834);
 			this.btnSave.Name = "btnSave";
 			this.btnSave.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
 			this.btnSave.Size = new System.Drawing.Size(167, 60);
@@ -320,7 +320,7 @@
 			this.btnOpen.BackColor = System.Drawing.Color.HotPink;
 			this.btnOpen.Image = global::Project_CS3.Properties.Resources.drag_and_drop;
 			this.btnOpen.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.btnOpen.Location = new System.Drawing.Point(382, 859);
+			this.btnOpen.Location = new System.Drawing.Point(358, 834);
 			this.btnOpen.Name = "btnOpen";
 			this.btnOpen.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
 			this.btnOpen.Size = new System.Drawing.Size(167, 60);
@@ -335,7 +335,7 @@
 			this.btnsubBinary.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.btnsubBinary.Image = global::Project_CS3.Properties.Resources.chart_curve;
 			this.btnsubBinary.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.btnsubBinary.Location = new System.Drawing.Point(1667, 44);
+			this.btnsubBinary.Location = new System.Drawing.Point(1534, 44);
 			this.btnsubBinary.Name = "btnsubBinary";
 			this.btnsubBinary.Size = new System.Drawing.Size(172, 53);
 			this.btnsubBinary.TabIndex = 111;
@@ -348,8 +348,8 @@
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.BackColor = System.Drawing.Color.Silver;
-			this.ClientSize = new System.Drawing.Size(1818, 972);
+			this.BackColor = System.Drawing.Color.Yellow;
+			this.ClientSize = new System.Drawing.Size(1895, 972);
 			this.Controls.Add(this.btnsubBinary);
 			this.Controls.Add(this.btnClose);
 			this.Controls.Add(this.btnSave);
@@ -357,6 +357,7 @@
 			this.Controls.Add(this.panelSubHisgram);
 			this.Controls.Add(this.panel1);
 			this.Controls.Add(this.label1);
+			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
 			this.Name = "Histogram_Equalization";
 			this.Text = "Histogram";
 			this.groupBox1.ResumeLayout(false);

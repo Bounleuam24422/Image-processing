@@ -22,7 +22,46 @@ namespace Project_CS3
 		Image<Gray, byte> outputImage;
 		Image<Gray, float> sobelImage, laplacianImage;
 
-		private void saveToolStripMenuItem_Click(object sender, EventArgs e)
+
+		private void pictureBox15_Click(object sender, EventArgs e)
+		{
+			if (inputImage != null)
+			{
+				outputImage = inputImage.Convert<Gray, byte>().Canny(150, 10);
+				imgOutput.Image = outputImage;
+			}
+		}
+
+		private void pictureBox1_Click(object sender, EventArgs e)
+		{
+			if (inputImage != null)
+			{
+				sobelImage = inputImage.Convert<Gray, float>().Sobel(1, 1, 5);
+				imgOutput.Image = sobelImage;
+			}
+		}
+
+		private void pictureBox2_Click(object sender, EventArgs e)
+		{
+			if (inputImage != null)
+			{
+				laplacianImage = inputImage.Convert<Gray, float>().Laplace(5);
+				imgOutput.Image = laplacianImage;
+			}
+		}
+
+		private void btnOpen_Click(object sender, EventArgs e)
+		{
+			OpenFileDialog opf = new OpenFileDialog();
+			opf.Filter = "Image Files|*.jpg;*.jpeg;*.png;*.gif;*.bmp;*.tiff";
+			if (opf.ShowDialog() == DialogResult.OK)
+			{
+				inputImage = new Image<Bgr, byte>(opf.FileName);
+				imgInput.Image = inputImage;
+			}
+		}
+
+		private void btnSave_Click(object sender, EventArgs e)
 		{
 			SaveFileDialog savef = new SaveFileDialog();
 			savef.Title = "Image Equalization and Filtering";
@@ -36,36 +75,9 @@ namespace Project_CS3
 			}
 		}
 
-		private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+		private void btnClose_Click(object sender, EventArgs e)
 		{
 			this.Close();
-		}
-
-		private void candyToolStripMenuItem_Click(object sender, EventArgs e)
-		{
-			if (inputImage != null)
-			{
-				outputImage = inputImage.Convert<Gray, byte>().Canny(150, 10);
-				imgOutput.Image = outputImage;
-			}
-		}
-
-		private void sobleToolStripMenuItem_Click(object sender, EventArgs e)
-		{
-			if (inputImage != null)
-			{
-				sobelImage = inputImage.Convert<Gray, float>().Sobel(1, 1, 5);
-				imgOutput.Image = sobelImage;
-			}
-		}
-
-		private void laplacianToolStripMenuItem_Click(object sender, EventArgs e)
-		{
-			if (inputImage != null)
-			{
-				laplacianImage = inputImage.Convert<Gray, float>().Laplace(5);
-				imgOutput.Image = laplacianImage;
-			}
 		}
 
 		private void openToolStripMenuItem_Click(object sender, EventArgs e)
