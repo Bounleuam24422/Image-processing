@@ -20,87 +20,52 @@ namespace Project_CS3
 		public Histogram_Equalization()
 		{
 			InitializeComponent();
+			customizeDesing();
 		}
-
-		private void btnGuassian_Click(object sender, EventArgs e)
+		private Form activeForm = null;
+		public void openChildForm(Form childForm)
 		{
-			if(radioBgr.Checked)
-	{
-				if (int.TryParse(txtksize.Text, out int ksize) && ksize > 0 && ksize % 2 == 1)
-				{
-					imgFilterC = new Image<Bgr, byte>(imgBeforeE.Width, imgBeforeE.Height);
-					CvInvoke.GaussianBlur(imgBeforeE, imgFilterC, new Size(3, 3), 0, 0, BorderType.Default);
-					ImgBoxOutput.Image = imgFilterC;
-					ImgBoxOutput.Refresh();
-					htgAfterE.ClearHistogram();
-					htgAfterE.GenerateHistograms(imgFilterC, 255);
-					htgAfterE.Refresh();
-				}
-				else
-				{
-					MessageBox.Show("Please enter a valid odd integer for ksize greater than 1.");
-				}
-			}
-
-	else if (radioGray.Checked)
-			{
-				if (int.TryParse(txtksize.Text, out int ksize) && ksize > 0 && ksize % 2 == 1)
-				{
-					imgFilter = new Image<Gray, byte>(imgGray.Width, imgGray.Height);
-					CvInvoke.GaussianBlur(imgGray, imgFilter, new Size(ksize, ksize), 0, 0, BorderType.Default);
-
-					ImgBoxOutput.Image = imgFilter;
-					ImgBoxOutput.Refresh();
-					htgAfterE.ClearHistogram();
-					htgAfterE.GenerateHistograms(imgFilter, 255);
-					htgAfterE.Refresh();
-				}
-				else
-				{
-					//   MessageBox.Show("Please enter a valid odd integer for ksize greater than 1.");
-				}
-			}
+			if (activeForm != null)
+				activeForm.Close();
+			activeForm = childForm;
+			childForm.TopLevel = false;
+			childForm.FormBorderStyle = FormBorderStyle.None;
+			childForm.Dock = DockStyle.Fill;
+			panelSubHisgram.Controls.Add(childForm);
+			panelSubHisgram.Tag = childForm;
+			childForm.BringToFront();
+			childForm.Show();
 		}
 
-		private void btnMedian_Click(object sender, EventArgs e)
+		/* panelSlide*/
+		private void customizeDesing()
 		{
-			if (radioBgr.Checked)
-			{
-				if (int.TryParse(txtksize.Text, out int ksize) && ksize > 0 && ksize % 2 == 1)
-				{
-					imgFilterC = new Image<Bgr, byte>(imgBeforeE.Width, imgBeforeE.Height);
-					CvInvoke.MedianBlur(imgBeforeE, imgFilterC, ksize);
-					ImgBoxOutput.Image = imgFilterC;
-					ImgBoxOutput.Refresh();
-					htgAfterE.ClearHistogram();
-					htgAfterE.GenerateHistograms(imgFilterC, 255);
-					htgAfterE.Refresh();
-				}
-				else
-				{
-					MessageBox.Show("Please enter a valid odd integer for ksize greater than 1.");
-				}
-			}
-
-			else if (radioGray.Checked)
-			{
-				if (int.TryParse(txtksize.Text, out int ksize) && ksize > 0 && ksize % 2 == 1)
-				{
-					imgFilter = new Image<Gray, byte>(imgGray.Width, imgGray.Height);
-					CvInvoke.MedianBlur(imgGray, imgFilter, ksize);
-
-					ImgBoxOutput.Image = imgFilter;
-					ImgBoxOutput.Refresh();
-					htgAfterE.ClearHistogram();
-					htgAfterE.GenerateHistograms(imgFilter, 255);
-					htgAfterE.Refresh();
-				}
-				else
-				{
-					MessageBox.Show("Please enter a valid odd integer for ksize greater than 1.");
-				}
-			}
+			panelSubHisgram.Visible = false;
 		}
+
+		/* hideSubmenu*/
+		private void hideSubmenu()
+		{
+			if (panelSubHisgram.Visible == true)
+				panelSubHisgram.Visible = false;
+
+		}
+
+		/*showSubmenu*/
+		private void showSubmenu(Panel submenu)
+		{
+			if (submenu.Visible == false)
+			{
+				hideSubmenu();
+				submenu.Visible = true;
+			}
+			else
+				submenu.Visible = false;
+
+		}
+
+
+
 
 		private void btnSaveImage_Click(object sender, EventArgs e)
 		{
@@ -119,6 +84,12 @@ namespace Project_CS3
 
 		private void pictureBox15_Click(object sender, EventArgs e)
 		{
+			if (imgBoxInput.Image == null)
+			{
+				MessageBox.Show("Please input an image first.");
+				return; // Exit the method if imgBoxInput is empty
+			}
+
 			imgAfterE = new Image<Gray, byte>(imgBeforeE.Width, imgBeforeE.Height);
 			CvInvoke.EqualizeHist(imgGray, imgAfterE);
 			ImgBoxOutput.Image = imgAfterE;
@@ -129,6 +100,12 @@ namespace Project_CS3
 
 		private void pictureBox3_Click(object sender, EventArgs e)
 		{
+			if (imgBoxInput.Image == null)
+			{
+				MessageBox.Show("Please input an image first.");
+				return; // Exit the method if imgBoxInput is empty
+			}
+
 			if (radioBgr.Checked)
 			{
 				if (int.TryParse(txtksize.Text, out int ksize) && ksize > 0 && ksize % 2 == 1)
@@ -164,11 +141,17 @@ namespace Project_CS3
 				{
 					//   MessageBox.Show("Please enter a valid odd integer for ksize greater than 1.");
 				}
-			}
+		}
 		}
 
 		private void pictureBox4_Click(object sender, EventArgs e)
 		{
+			if (imgBoxInput.Image == null)
+			{
+				MessageBox.Show("Please input an image first.");
+				return; // Exit the method if imgBoxInput is empty
+			}
+
 			if (radioBgr.Checked)
 			{
 				if (int.TryParse(txtksize.Text, out int ksize) && ksize > 0 && ksize % 2 == 1)
@@ -244,21 +227,25 @@ namespace Project_CS3
 			this.Close();
 		}
 
+		private void radioBgr_CheckedChanged(object sender, EventArgs e)
+		{
+
+		}
+
+		private void btnsubBinary_Click(object sender, EventArgs e)
+		{
+			showSubmenu(panelSubHisgram);
+		}
+
+		private void radioGray_CheckedChanged(object sender, EventArgs e)
+		{
+
+		}
+
 		private void btnExit_Click(object sender, EventArgs e)
 		{
 			this.Close();
 		}
-
-		private void btnEqualization_Click(object sender, EventArgs e)
-		{
-			imgAfterE = new Image<Gray, byte>(imgBeforeE.Width, imgBeforeE.Height);
-			CvInvoke.EqualizeHist(imgGray, imgAfterE);
-			ImgBoxOutput.Image = imgAfterE;
-			htgAfterE.ClearHistogram();
-			htgAfterE.GenerateHistograms(imgAfterE, 255);
-			htgAfterE.Refresh();
-		}
-
 		
 
 		private void btnLoadImage_Click(object sender, EventArgs e)
