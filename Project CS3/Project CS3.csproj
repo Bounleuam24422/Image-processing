@@ -195,6 +195,21 @@
     <None Include="Resources\chart_curve.png" />
     <None Include="Resources\undo.png" />
     <None Include="Resources\dropbox %281%29.png" />
+    <None Include="Resources\picf1.png" />
+    <None Include="Resources\picf2.png" />
+    <None Include="Resources\picf3.png" />
+    <None Include="Resources\picf4.png" />
+    <None Include="Resources\picf5.png" />
+    <None Include="Resources\picf6.png" />
+    <None Include="Resources\picf7.png" />
+    <None Include="Resources\picf8.png" />
+    <None Include="Resources\picf9.png" />
+    <None Include="Resources\picf10.png" />
+    <None Include="Resources\picf11.png" />
+    <None Include="Resources\picf12.png" />
+    <None Include="Resources\picf13.png" />
+    <None Include="Resources\pic7.png" />
+    <None Include="Resources\filter.png" />
     <Content Include="vcruntime140.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

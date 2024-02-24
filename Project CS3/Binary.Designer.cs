@@ -34,6 +34,8 @@
 			this.btnOT_Su = new System.Windows.Forms.Button();
 			this.btnGuasian = new System.Windows.Forms.Button();
 			this.btnBiny_Inver = new System.Windows.Forms.Button();
+			this.panel1 = new System.Windows.Forms.Panel();
+			this.imgGray = new Emgu.CV.UI.ImageBox();
 			this.pictureBox4 = new System.Windows.Forms.PictureBox();
 			this.pictureBox3 = new System.Windows.Forms.PictureBox();
 			this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -42,19 +44,18 @@
 			this.btnClose = new System.Windows.Forms.Button();
 			this.btnSave = new System.Windows.Forms.Button();
 			this.btnOpen = new System.Windows.Forms.Button();
-			this.imgBinary = new Emgu.CV.UI.ImageBox();
 			this.imgInput = new Emgu.CV.UI.ImageBox();
-			this.imgGray = new Emgu.CV.UI.ImageBox();
-			this.panel1 = new System.Windows.Forms.Panel();
+			this.imgBinary = new Emgu.CV.UI.ImageBox();
+			this.btnCrop = new System.Windows.Forms.Button();
+			this.panel1.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.imgGray)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.imgBinary)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.imgInput)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.imgGray)).BeginInit();
-			this.panel1.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.imgBinary)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// btnBinary
@@ -111,6 +112,26 @@
 			this.btnBiny_Inver.Text = "Binary Inver";
 			this.btnBiny_Inver.UseVisualStyleBackColor = false;
 			this.btnBiny_Inver.Click += new System.EventHandler(this.btnBiny_Inver_Click);
+			// 
+			// panel1
+			// 
+			this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+			this.panel1.Controls.Add(this.imgInput);
+			this.panel1.Controls.Add(this.imgBinary);
+			this.panel1.Location = new System.Drawing.Point(40, 31);
+			this.panel1.Name = "panel1";
+			this.panel1.Size = new System.Drawing.Size(1091, 468);
+			this.panel1.TabIndex = 100;
+			// 
+			// imgGray
+			// 
+			this.imgGray.Location = new System.Drawing.Point(1523, 586);
+			this.imgGray.Name = "imgGray";
+			this.imgGray.Size = new System.Drawing.Size(10, 10);
+			this.imgGray.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+			this.imgGray.TabIndex = 15;
+			this.imgGray.TabStop = false;
+			this.imgGray.Visible = false;
 			// 
 			// pictureBox4
 			// 
@@ -204,15 +225,6 @@
 			this.btnOpen.UseVisualStyleBackColor = false;
 			this.btnOpen.Click += new System.EventHandler(this.btnOpen_Click);
 			// 
-			// imgBinary
-			// 
-			this.imgBinary.Location = new System.Drawing.Point(549, 4);
-			this.imgBinary.Name = "imgBinary";
-			this.imgBinary.Size = new System.Drawing.Size(537, 460);
-			this.imgBinary.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-			this.imgBinary.TabIndex = 13;
-			this.imgBinary.TabStop = false;
-			// 
 			// imgInput
 			// 
 			this.imgInput.Location = new System.Drawing.Point(5, 3);
@@ -222,25 +234,27 @@
 			this.imgInput.TabIndex = 14;
 			this.imgInput.TabStop = false;
 			// 
-			// imgGray
+			// imgBinary
 			// 
-			this.imgGray.Location = new System.Drawing.Point(1523, 586);
-			this.imgGray.Name = "imgGray";
-			this.imgGray.Size = new System.Drawing.Size(10, 10);
-			this.imgGray.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-			this.imgGray.TabIndex = 15;
-			this.imgGray.TabStop = false;
-			this.imgGray.Visible = false;
+			this.imgBinary.Location = new System.Drawing.Point(549, 4);
+			this.imgBinary.Name = "imgBinary";
+			this.imgBinary.Size = new System.Drawing.Size(537, 460);
+			this.imgBinary.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+			this.imgBinary.TabIndex = 13;
+			this.imgBinary.TabStop = false;
 			// 
-			// panel1
+			// btnCrop
 			// 
-			this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-			this.panel1.Controls.Add(this.imgInput);
-			this.panel1.Controls.Add(this.imgBinary);
-			this.panel1.Location = new System.Drawing.Point(40, 31);
-			this.panel1.Name = "panel1";
-			this.panel1.Size = new System.Drawing.Size(1091, 468);
-			this.panel1.TabIndex = 100;
+			this.btnCrop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+			this.btnCrop.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnCrop.ForeColor = System.Drawing.Color.Black;
+			this.btnCrop.Location = new System.Drawing.Point(683, 314);
+			this.btnCrop.Margin = new System.Windows.Forms.Padding(4);
+			this.btnCrop.Name = "btnCrop";
+			this.btnCrop.Size = new System.Drawing.Size(167, 60);
+			this.btnCrop.TabIndex = 102;
+			this.btnCrop.Text = "Crop";
+			this.btnCrop.UseVisualStyleBackColor = false;
 			// 
 			// BinaryModule
 			// 
@@ -248,6 +262,7 @@
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.Yellow;
 			this.ClientSize = new System.Drawing.Size(1532, 689);
+			this.Controls.Add(this.btnCrop);
 			this.Controls.Add(this.imgGray);
 			this.Controls.Add(this.pictureBox4);
 			this.Controls.Add(this.pictureBox3);
@@ -266,15 +281,15 @@
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
 			this.Name = "BinaryModule";
 			this.Text = "Binary";
+			this.panel1.ResumeLayout(false);
+			((System.ComponentModel.ISupportInitialize)(this.imgGray)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.imgBinary)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.imgInput)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.imgGray)).EndInit();
-			this.panel1.ResumeLayout(false);
+			((System.ComponentModel.ISupportInitialize)(this.imgBinary)).EndInit();
 			this.ResumeLayout(false);
 
 		}
@@ -297,5 +312,6 @@
 		private System.Windows.Forms.Button btnSave;
 		private System.Windows.Forms.Button btnClose;
 		private System.Windows.Forms.Panel panel1;
+		private System.Windows.Forms.Button btnCrop;
 	}
 }

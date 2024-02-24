@@ -25,6 +25,48 @@ namespace Project_CS3
 		System.Drawing.Image file;
 		Boolean opened = false;
 
+		private Form activeForm = null;
+		public void openChildForm(Form childForm)
+		{
+			if (activeForm != null)
+				activeForm.Close();
+			activeForm = childForm;
+			childForm.TopLevel = false;
+			childForm.FormBorderStyle = FormBorderStyle.None;
+			childForm.Dock = DockStyle.Fill;
+			//lblTitle.Text = childForm.Text;
+			panelSubfilters.Controls.Add(childForm);
+			panelSubfilters.Tag = childForm;
+			childForm.BringToFront();
+			childForm.Show();
+		}
+
+		/* panelSlide*/
+		private void customizeDesing()
+		{
+			panelSubfilters.Visible = false;
+		}
+
+		/* hideSubmenu*/
+		private void hideSubmenu()
+		{
+			if (panelSubfilters.Visible == true)
+				panelSubfilters.Visible = false;
+
+		}
+
+		/*showSubmenu*/
+		private void showSubmenu(Panel submenu)
+		{
+			if (submenu.Visible == false)
+			{
+				hideSubmenu();
+				submenu.Visible = true;
+			}
+			else
+				submenu.Visible = false;
+
+		}
 		void reload()
 		{
 			if (!opened)
@@ -830,10 +872,7 @@ namespace Project_CS3
 
 		}
 
-		private void pictureBox2_Click(object sender, EventArgs e)
-		{
-
-		}
+		
 
 		private void Filters_Load(object sender, EventArgs e)
 		{
@@ -856,6 +895,94 @@ namespace Project_CS3
 		private void trackBar3_ValueChanged(object sender, EventArgs e)
 		{
 			saturation();
+		}
+
+		private void pictureBox2_Click(object sender, EventArgs e)
+		{
+
+		}
+
+		private void pictureBox15_Click(object sender, EventArgs e)
+		{
+			reload();
+			sepia1();
+		}
+
+		private void pictureBox3_Click(object sender, EventArgs e)
+		{
+			reload();
+			sepia();
+		}
+
+		private void pictureBox4_Click(object sender, EventArgs e)
+		{
+			reload();
+			grayscale();
+		}
+
+		private void pictureBox5_Click(object sender, EventArgs e)
+		{
+			reload();
+			invert();
+		}
+
+		private void pictureBox6_Click(object sender, EventArgs e)
+		{
+			reload();
+			rbgTobgr();
+		}
+
+		private void pictureBox7_Click(object sender, EventArgs e)
+		{
+			reload();
+			blackAndWhite();
+		}
+
+		private void pictureBox8_Click(object sender, EventArgs e)
+		{
+
+			reload();
+			polaroid();
+		}
+
+		private void pictureBox9_Click(object sender, EventArgs e)
+		{
+			smooth();
+		}
+
+		private void pictureBox10_Click(object sender, EventArgs e)
+		{
+			WaterWavef();
+		}
+
+		private void pictureBox12_Click(object sender, EventArgs e)
+		{
+			ccorrect();
+		}
+
+		private void pictureBox11_Click(object sender, EventArgs e)
+		{
+			GaussianSharp();
+		}
+
+		private void pictureBox13_Click(object sender, EventArgs e)
+		{
+			Sharp();
+		}
+
+		private void btnCrop_Click_1(object sender, EventArgs e)
+		{
+			crop();
+		}
+
+		private void pictureBox14_Click(object sender, EventArgs e)
+		{
+			crop();
+		}
+
+		private void btnCrop_Click_2(object sender, EventArgs e)
+		{
+
 		}
 	}
 }
