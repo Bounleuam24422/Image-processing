@@ -85,6 +85,12 @@
     <Compile Include="Filters.Designer.cs">
       <DependentUpon>Filters.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Histogram Equalization.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -122,6 +128,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Filters.resx">
       <DependentUpon>Filters.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Histogram Equalization.resx">
       <DependentUpon>Histogram Equalization.cs</DependentUpon>
@@ -175,6 +184,15 @@
     <None Include="Resources\setting.png" />
     <None Include="Resources\crop.png" />
     <None Include="Resources\399256985_1055743368733719_2046660532677995053_n.jpg" />
+    <None Include="Resources\picB1.jpg" />
+    <None Include="Resources\picB2.jpg" />
+    <None Include="Resources\picB3.jpg" />
+    <None Include="Resources\picB4.jpg" />
+    <None Include="Resources\picB5.jpg" />
+    <None Include="Resources\drag-and-drop.png" />
+    <None Include="Resources\save-to-drive.png" />
+    <None Include="Resources\door-open %281%29.png" />
+    <None Include="Resources\chart_curve.png" />
     <Content Include="vcruntime140.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

@@ -40,7 +40,6 @@ namespace Project_CS3
 				grayImage = oriImage.Convert<Gray, byte>();
 				imgGray.Image = grayImage;
 				imgBinary.Image = null;
-				comboBox1.SelectedText = "ເລືອກຮູບແບບພາບຂາວດຳ";
 			}
 		}
 
@@ -84,36 +83,37 @@ namespace Project_CS3
 			}
 		}
 
-
-		private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+		private void btnBinary_Click(object sender, EventArgs e)
 		{
-			if (comboBox1.SelectedIndex == 0)
-			{
-				binaryImage = grayImage.ThresholdBinary(new Gray(100), new Gray(255));
-				imgBinary.Image = binaryImage;
-			}
-			else if (comboBox1.SelectedIndex == 1)
-			{
-				binaryImage = grayImage.ThresholdBinaryInv(new Gray(100), new Gray(255));
-				imgBinary.Image = binaryImage;
-			}
-			else if (comboBox1.SelectedIndex == 2)
-			{
-				binaryImage = grayImage.ThresholdToZero(new Gray(100));
-				imgBinary.Image = binaryImage;
-			}
-			else if (comboBox1.SelectedIndex == 3)
-			{
-				binaryImage = grayImage.ThresholdAdaptive(new Gray(256),
-			   AdaptiveThresholdType.GaussianC, ThresholdType.Binary, 9, new Gray(0));
-				imgBinary.Image = binaryImage;
-			}
-			else
-			{
-				binaryImage = grayImage.ThresholdAdaptive(new Gray(256),
-			   AdaptiveThresholdType.MeanC, ThresholdType.Binary, 9, new Gray(0));
-				imgBinary.Image = binaryImage;
-			}
+			binaryImage = grayImage.ThresholdBinary(new Gray(100), new Gray(255));
+			imgBinary.Image = binaryImage;
 		}
+
+		private void btnBiny_Inver_Click(object sender, EventArgs e)
+		{
+			binaryImage = grayImage.ThresholdBinaryInv(new Gray(100), new Gray(255));
+			imgBinary.Image = binaryImage;
+		}
+
+		private void btnOT_Su_Click(object sender, EventArgs e)
+		{
+			binaryImage = grayImage.ThresholdToZero(new Gray(100));
+			imgBinary.Image = binaryImage;
+		}
+
+		private void btnGuasian_Click(object sender, EventArgs e)
+		{
+			binaryImage = grayImage.ThresholdAdaptive(new Gray(256),
+			AdaptiveThresholdType.GaussianC, ThresholdType.Binary, 9, new Gray(0));
+			imgBinary.Image = binaryImage;
+		}
+
+		private void btnMean_Click(object sender, EventArgs e)
+		{
+			binaryImage = grayImage.ThresholdAdaptive(new Gray(256),
+			AdaptiveThresholdType.MeanC, ThresholdType.Binary, 9, new Gray(0));
+			imgBinary.Image = binaryImage;
+		}
+
 	}
 }

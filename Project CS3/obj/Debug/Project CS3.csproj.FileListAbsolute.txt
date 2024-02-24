@@ -57,3 +57,4 @@ C:\Users\GIGABYTE\source\repos\Image Processing\Image-processing\Project CS3\bin
 C:\Users\GIGABYTE\source\repos\Image Processing\Image-processing\Project CS3\bin\Debug\AForge.xml
 C:\Users\GIGABYTE\source\repos\Image Processing\Image-processing\Project CS3\bin\Debug\AForge.Imaging.xml
 C:\Users\GIGABYTE\source\repos\Image Processing\Image-processing\Project CS3\bin\Debug\AForge.Math.xml
+C:\Users\GIGABYTE\source\repos\Image Processing\Image-processing\Project CS3\obj\Debug\Project_CS3.Form1.resources

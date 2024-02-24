@@ -104,6 +104,10 @@ namespace Project_CS3
 		{
 
 		}
-		
+
+		private void btnHisgm(object sender, EventArgs e)
+		{
+
+		}
 	}
 }
