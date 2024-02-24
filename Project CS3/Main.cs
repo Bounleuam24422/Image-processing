@@ -141,5 +141,10 @@ namespace Project_CS3
 		{
 
 		}
+
+		private void btnCntour_Click_1(object sender, EventArgs e)
+		{
+			openChildForm(new ContourModule());
+		}
 	}
 }

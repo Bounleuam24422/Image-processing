@@ -181,6 +181,7 @@
 			this.btnCntour.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
 			this.btnCntour.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
 			this.btnCntour.UseVisualStyleBackColor = false;
+			this.btnCntour.Click += new System.EventHandler(this.btnCntour_Click_1);
 			// 
 			// button1
 			// 
