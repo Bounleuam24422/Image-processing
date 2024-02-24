@@ -226,6 +226,9 @@
     <None Include="Resources\PicMC3.jpg" />
     <None Include="Resources\PicMC4.jpg" />
     <None Include="Resources\document_shapes.png" />
+    <None Include="Resources\picH1.jpg" />
+    <None Include="Resources\picHB2.jpg" />
+    <None Include="Resources\picHB3.jpg" />
     <Content Include="vcruntime140.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
